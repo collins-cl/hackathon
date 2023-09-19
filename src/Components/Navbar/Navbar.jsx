@@ -43,7 +43,7 @@ const Navbar = () => {
         </div>
 
         <div className="hamburger" onClick={openHamburger}>
-          <img src={Hamburger} width={15} alt="" />
+          <img src={Hamburger} width={20} alt="" />
         </div>
       </div>
     </div>
