@@ -50,7 +50,7 @@ const Timeline = () => {
               </p>
             </div>
 
-            <div className="one">1</div>
+            <div className="one">3</div>
 
             <div className="date">November 18, 2023</div>
           </div>
@@ -58,7 +58,7 @@ const Timeline = () => {
           <div className="second fourth">
             <div className="date">November 18, 2023</div>
 
-            <div className="two">2</div>
+            <div className="two">4</div>
 
             <div className="left-container">
               <h4>Hackathon Announcement</h4>
@@ -78,7 +78,7 @@ const Timeline = () => {
               </p>
             </div>
 
-            <div className="one">1</div>
+            <div className="one">5</div>
 
             <div className="date">November 18, 2023</div>
           </div>
@@ -86,7 +86,7 @@ const Timeline = () => {
           <div className="second sixth">
             <div className="date">November 18, 2023</div>
 
-            <div className="two">2</div>
+            <div className="two">6</div>
 
             <div className="left-container">
               <h4>Hackathon Announcement</h4>
