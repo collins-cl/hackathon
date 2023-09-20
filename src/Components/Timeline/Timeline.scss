@@ -1,0 +1,283 @@
+@import "../fontColors.scss";
+
+.timeline {
+  padding: 5em 0;
+  border-bottom: $borderBottom;
+
+  .wrapper {
+    max-width: 80vw;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .head {
+      font-size: 1.2em;
+      font-weight: bold;
+    }
+
+    .info {
+      width: 35%;
+      text-align: center;
+      font-size: 14px;
+    }
+
+    .content {
+      width: 70%;
+      margin: auto;
+      margin-top: 5em;
+      position: relative;
+
+      .first {
+        position: relative;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 3em;
+
+        div {
+          width: 33.33%;
+        }
+
+        .date {
+          text-align: left;
+          font-size: 15px;
+        }
+
+        .one {
+          text-align: center;
+          height: 25px;
+          width: 25px;
+          border-radius: 50%;
+          background: $lineargradient;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 14px;
+        }
+
+        .right-container {
+          font-size: 12px;
+          position: relative;
+
+          &::before {
+            content: "";
+            height: 4em;
+            width: 3px;
+            background-color: $primarycolor;
+            position: absolute;
+            right: 0;
+            margin-right: -10.7em;
+            margin-top: -2.5em;
+          }
+
+          h4 {
+            color: $primarycolor;
+            margin-bottom: 4px;
+          }
+        }
+      }
+
+      .second {
+        position: relative;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 3em;
+        margin-top: 2em;
+
+        div {
+          width: 33.33%;
+        }
+
+        .date {
+          text-align: right;
+          font-size: 15px;
+        }
+
+        .two {
+          text-align: center;
+          height: 25px;
+          width: 25px;
+          border-radius: 50%;
+          background: $lineargradient;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 14px;
+        }
+
+        .left-container {
+          font-size: 12px;
+          position: relative;
+
+          &::before {
+            content: "";
+            height: 4em;
+            width: 3px;
+            background-color: $primarycolor;
+            position: absolute;
+            left: 0;
+            margin-left: -10.9em;
+            margin-top: -2.5em;
+          }
+
+          h4 {
+            color: $primarycolor;
+            margin-bottom: 5px;
+          }
+        }
+      }
+
+      .third {
+        margin-top: 2em;
+      }
+
+      .fourth {
+        margin-top: 2em;
+      }
+
+      .fifth {
+        margin-top: 2em;
+      }
+
+      .sixth {
+        margin-top: 2em;
+      }
+    }
+
+    .date {
+      color: $primarycolor;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  @import "../fontColors.scss";
+
+  .timeline {
+    padding: 5em 0;
+    border-bottom: $borderBottom;
+
+    .wrapper {
+      max-width: 75vw;
+      margin: auto;
+      display: block;
+
+      .head {
+        text-align: center;
+      }
+
+      .info {
+        width: 100%;
+      }
+
+      .content {
+        margin-top: 5em;
+        width: 100%;
+        position: relative;
+
+        .first {
+          position: relative;
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          align-items: flex-start;
+          gap: 0;
+
+          div {
+            width: 100%;
+          }
+
+          .right-container {
+            text-align: left;
+            font-size: 12px;
+            margin-top: 5px;
+          }
+
+          .one {
+            position: absolute;
+            left: -2.7em;
+            font-size: 12px;
+            height: 22px;
+            width: 22px;
+            bottom: 0;
+          }
+
+          .right-container {
+            font-size: 12px;
+            position: relative;
+
+            &::before {
+              content: "";
+              height: 6em;
+              width: 3px;
+              background-color: $primarycolor;
+              position: absolute;
+              left: 0;
+              margin-left: -1.9em;
+              margin-top: 0em;
+            }
+          }
+
+          .date {
+            font-size: 12px;
+            margin-top: 5px;
+          }
+        }
+
+        .second {
+          position: relative;
+          width: 100%;
+          display: flex;
+          flex-direction: column-reverse;
+          justify-content: space-between;
+          align-items: flex-start;
+          gap: 0;
+
+          div {
+            width: 100%;
+          }
+
+          .date {
+            text-align: left;
+            font-size: 12px;
+            margin-top: 5px;
+          }
+
+          .two {
+            position: absolute;
+            left: -2.7em;
+            font-size: 12px;
+            height: 22px;
+            width: 22px;
+          }
+
+          .left-container {
+            font-size: 12px;
+            position: relative;
+
+            &::before {
+              content: "";
+              height: 6em;
+              width: 3px;
+              background-color: $primarycolor;
+              position: absolute;
+              left: 0;
+              margin-left: -1.9em;
+              margin-top: 0em;
+            }
+          }
+        }
+      }
+
+      .date {
+        color: $primarycolor;
+      }
+    }
+  }
+}
