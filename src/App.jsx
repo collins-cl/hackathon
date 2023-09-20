@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Overview from "./Components/Overview/Overview";
 import Faq from "./Components/FAQs/Faq";
 import Timeline from "./Components/Timeline/Timeline";
+import Prize from "./Components/Prizes/Prize";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Overview />
         <Faq />
         <Timeline />
+        <Prize/>
         <p>sdsd</p>
         <p>sdsd</p>
         <p>sdsd</p>
