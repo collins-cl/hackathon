@@ -76,14 +76,15 @@
       }
 
       .section2-inactive {
-        position: absolute;
+        position: fixed;
         top: 0;
         left: 0;
         right: 0;
         background-color: #150e28;
         width: 100%;
         height: 100vh;
-        padding: 7em 3em;
+        overflow: hidden;
+        padding: 8em 4em;
         z-index: 1;
         display: block;
         animation: dropdown .3s ease;
