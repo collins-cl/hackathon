@@ -1,0 +1,39 @@
+.countdown {
+  margin-top: 1em;
+  font-size: 3.5em;
+  position: relative;
+  sub {
+    font-size: 12px;
+  }
+
+  .float-star {
+    position: absolute;
+    right: 0;
+    margin-right: 3em;
+    margin-top: 0;
+    margin-top: -3em;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .countdown {
+    margin-top: 1em;
+    font-size: 3.5em;
+    position: relative;
+    sub {
+      font-size: 12px;
+    }
+
+    .float-star {
+      position: absolute;
+      right: 0;
+      margin-right: 1em;
+      margin-top: 0;
+      margin-top: -3.8em;
+
+      img {
+        width: 14px;
+      }
+    }
+  }
+}

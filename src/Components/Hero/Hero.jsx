@@ -1,13 +1,14 @@
 import React from "react";
 import "../Hero/Hero.scss";
 import Star from "../../assets/heroimages/star.png";
-import Star1 from "../../assets/heroimages/star-1.png";
+import { motion } from "framer-motion";
 import Chain from "../../assets/heroimages/chain.png";
 import Fire from "../../assets/heroimages/fire.png";
 import Light from "../../assets/heroimages/lightbulb.png";
 import Dude from "../../assets/heroimages/man.png";
 import World from "../../assets/heroimages/world.png";
 import { Link } from "react-router-dom";
+import Timer from "../Timer/Timer";
 
 const Hero = () => {
   return (
@@ -42,19 +43,21 @@ const Hero = () => {
             <Link>Register</Link>
           </div>
 
-          <div className="countdown">
-            00<sub>H</sub> 00<sub>M</sub> 00<sub>S</sub>
-            <p className="float-star">
-              <img src={Star1} width={20} alt="" />
-            </p>
-          </div>
+          <Timer />
         </div>
 
         <div className="box2">
           <img src={Dude} alt="" />
-          <img className="abs-image" src={World} alt="" />
+          <motion.img
+            animate={{ rotate: 720 }}
+            transition={{duration: 2}}
+            className="abs-image"
+            src={World}
+            alt=""
+          />
         </div>
       </div>
+      <div className="clear"></div>
     </div>
   );
 };

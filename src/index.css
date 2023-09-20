@@ -7,7 +7,6 @@
   src: url("./Fonts/Poppins/Poppins-ExtraBold.ttf");
 }
 
-
 * {
   margin: 0;
   padding: 0;
@@ -20,4 +19,8 @@
 body {
   font-family: "Poppins";
   background: #150e28;
+}
+
+body::-webkit-scrollbar {
+  display: none;
 }
