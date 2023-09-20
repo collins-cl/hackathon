@@ -28,7 +28,9 @@ const Navbar = () => {
             <ul>
               <Link>Timeline</Link>
               <Link>Overview</Link>
-              <Link>FAQs</Link>
+              <Link to="faq" smooth={true}>
+                FAQs
+              </Link>
               <Link>Contact</Link>
             </ul>
 

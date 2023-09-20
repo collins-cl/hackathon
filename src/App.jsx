@@ -3,6 +3,7 @@ import Hero from "./Components/Hero/Hero";
 import Navbar from "./Components/Navbar/Navbar";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Overview from "./Components/Overview/Overview";
+import Faq from "./Components/FAQs/Faq";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
         <Navbar />
         <Hero />
         <Overview />
+        <Faq />
         <p>sdsd</p>
         <p>sdsd</p>
         <p>sdsd</p>
