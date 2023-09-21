@@ -1,0 +1,69 @@
+@import "../fontColors.scss";
+
+.reg {
+  width: 100vw;
+  height: 100vh;
+  background: rgba(21, 14, 40, 0.93);
+  position: fixed;
+  top: 0;
+  z-index: 1;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    margin: auto;
+    border-radius: 5px;
+    border: 1px solid #d434fe;
+    background: rgba(255, 255, 255, 0.01);
+    margin-top: 10vh;
+    text-align: center;
+    padding: 2em;
+
+    .congrats {
+      font-size: 1.8em;
+    }
+
+    .info {
+      font-size: 12px;
+      width: 41%;
+    }
+
+    .back {
+      width: 100%;
+      height: 40px;
+      font-size: 14px;
+      background: $lineargradient;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 1em;
+      cursor: pointer;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .reg {
+    padding: 1em;
+
+    .container {
+      width: 80%;
+      margin-top: 5vh;
+      text-align: center;
+      padding: 2em;
+
+      .congrats {
+        font-size: 1.3em;
+      }
+
+      .info {
+        font-size: 12px;
+        width: 80%;
+        margin-top: 10px;
+      }
+    }
+  }
+}

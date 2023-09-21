@@ -13,9 +13,9 @@ const Footer = () => {
         <div className="container">
           <div className="container1">
             <div className="logo">
-              <a href="/">
+              <RegLink to="/">
                 <img src={Logo} alt="" />
-              </a>
+              </RegLink>
             </div>
 
             <div className="info">
@@ -35,26 +35,42 @@ const Footer = () => {
             <div className="head">Useful Links</div>
 
             <div className="links">
-              <Link>Overview</Link>
-              <Link>TimeLine</Link>
-              <Link>FAQs</Link>
-              <RegLink to="">Register</RegLink>
+              <Link to="overview">Overview</Link>
+              <Link to="timeline">TimeLine</Link>
+              <Link to="faq">FAQs</Link>
+              <RegLink to="/register">Register</RegLink>
             </div>
 
             <div className="socials">
               <p>Follow us</p>
 
               <div>
-                <a href="http://" target="_blank" rel="noopener noreferrer">
+                <a
+                  href="http://www.instagram.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <FaInstagram className="icon" />
                 </a>
-                <a href="http://" target="_blank" rel="noopener noreferrer">
+                <a
+                  href="http://www.x.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <FaXTwitter className="icon" />
                 </a>
-                <a href="http://" target="_blank" rel="noopener noreferrer">
+                <a
+                  href="http://www.faecbook.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <FaFacebookF className="icon" />
                 </a>
-                <a href="http://" target="_blank" rel="noopener noreferrer">
+                <a
+                  href="http://www.linkedln.come"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <FaLinkedin className="icon" />
                 </a>
               </div>
@@ -67,7 +83,7 @@ const Footer = () => {
             </div>
 
             <div className="location">
-              <FaLocationDot  className="loc"/>{" "}
+              <FaLocationDot className="loc" />{" "}
               <p>27,Alara Street Yaba 100012 Lagos State</p>
             </div>
           </div>

@@ -93,12 +93,11 @@
             background: transparent;
             border: 1px solid white;
             border-radius: 3px;
-            padding: 5px;
+            padding: 0 15px;
             background: rgba(255, 255, 255, 0.03);
 
             &::placeholder {
               font-size: 13px;
-              padding: 0 1.5em;
               color: white;
             }
           }
@@ -113,12 +112,12 @@
           background: transparent;
           border: 1px solid white;
           border-radius: 3px;
-          padding: 5px;
+          padding: 15px;
           background: rgba(255, 255, 255, 0.03);
 
           &::placeholder {
             font-size: 14px;
-            padding: 0 1.5em;
+
             color: white;
           }
         }

@@ -17,25 +17,31 @@ const Navbar = () => {
       <div className="wrapper">
         <div className="section1">
           <div className="logo">
-            <a href="/">
+            <RegLink to="/">
               <img src={Logo} width={125} alt="\" />
-            </a>
+            </RegLink>
           </div>
         </div>
 
         <div className={open ? "section2-inactive" : "section2"}>
           <div className="container">
             <ul>
-              <Link to="timeline">Timeline</Link>
-              <Link to="overview">Overview</Link>
-              <Link to="faq" smooth={true}>
+              <Link to="timeline" smooth={true} onClick={closeHmaburger}>
+                Timeline
+              </Link>
+              <Link to="overview" smooth={true} onClick={closeHmaburger}>
+                Overview
+              </Link>
+              <Link to="faq" smooth={true} onClick={closeHmaburger}>
                 FAQs
               </Link>
-              <RegLink to="/contact">Contact</RegLink>
+              <RegLink to="/contact" onClick={closeHmaburger}>
+                Contact
+              </RegLink>
             </ul>
 
             <div className="reg-btn">
-              <RegLink>Register</RegLink>
+              <RegLink to="/register">Register</RegLink>
             </div>
 
             <div className="hamburger-close-menu" onClick={closeHmaburger}>

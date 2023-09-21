@@ -40,7 +40,7 @@ const Hero = () => {
           </div>
 
           <div className="reg-btn">
-            <Link>Register</Link>
+            <Link to="/register">Register</Link>
           </div>
 
           <Timer />
