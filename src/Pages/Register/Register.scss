@@ -1,0 +1,318 @@
+@import "../../Components/fontColors.scss";
+
+.register {
+  padding: 3em 0;
+  .wrapper {
+    width: 75vw;
+    margin: auto;
+    margin-top: 1em;
+    display: flex;
+    align-items: center;
+
+    .box1 {
+      img {
+        width: 500px;
+      }
+    }
+
+    .box2 {
+      border-radius: 5px;
+      background: rgba(255, 255, 255, 0.03);
+      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+      padding: 2em 2em;
+      width: 600px;
+
+      .head {
+        font-size: 1.2em;
+        font-weight: bold;
+        color: $primarycolor;
+      }
+
+      .neck {
+        margin-top: 1em;
+        display: flex;
+        align-items: center;
+        gap: 2em;
+        p {
+          font-size: 12px;
+        }
+        div {
+          position: relative;
+
+          &::after {
+            content: url("../../assets/Line\ 9.png");
+            position: absolute;
+            left: 0;
+            margin-left: -1.5em;
+            bottom: 0;
+            margin-bottom: -3px;
+          }
+
+          img {
+            width: 17px;
+          }
+        }
+      }
+
+      .create {
+        font-size: 1.5em;
+        margin-top: 0.7em;
+      }
+
+      form {
+        width: 100%;
+        padding: 5px;
+
+        .sect1 {
+          display: flex;
+          justify-content: space-between;
+          margin-top: 1em;
+
+          div {
+            width: 49%;
+          }
+          label {
+            font-size: 13px;
+          }
+          input {
+            width: 100%;
+            height: 40px;
+            border-radius: 4px;
+            outline: none;
+            padding: 5px 1em;
+            border: 1px solid #fff;
+            background: rgba(255, 255, 255, 0.03);
+            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+            margin-top: 5px;
+          }
+        }
+
+        .sect2 {
+          display: flex;
+          justify-content: space-between;
+          margin-top: 1em;
+
+          div {
+            width: 49%;
+          }
+          label {
+            font-size: 13px;
+          }
+
+          .container {
+            width: 100%;
+            position: relative;
+            .box {
+              width: 100%;
+              height: 40px;
+              border-radius: 4px;
+              outline: none;
+              border: 1px solid #fff;
+              background: rgba(255, 255, 255, 0.03);
+              box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+              margin-top: 5px;
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              padding: 10px;
+              font-size: 13px;
+            }
+
+            .group_size {
+              position: absolute;
+              width: 100%;
+              background: #150e28;
+              padding: 10px;
+              z-index: 1;
+
+              .content {
+                padding: 5px;
+                width: 100%;
+                cursor: pointer;
+                font-size: 14px;
+              }
+            }
+          }
+        }
+
+        .attention {
+          margin-top: 1em;
+          font-size: 12px;
+          color: #ff26b9;
+          font-style: italic;
+          font-weight: 400;
+          line-height: normal;
+        }
+
+        .check {
+          display: flex;
+          align-items: center;
+          gap: 5px;
+          input {
+            width: 10px;
+          }
+          margin-top: 1em;
+          font-size: 12px;
+        }
+
+        button {
+          width: 100%;
+          margin-top: 1em;
+          height: 40px;
+          border-radius: 4px;
+          border: none;
+          cursor: pointer;
+          background: $lineargradient;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .register {
+    padding: 2em 0;
+    .wrapper {
+      width: 90vw;
+      margin: auto;
+      margin-top: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .box1 {
+        img {
+          width: 100%;
+        }
+      }
+
+      .box2 {
+        border-radius: 0;
+        background: none;
+        box-shadow: none;
+        padding: 2em;
+        width: 100%;
+
+        .head {
+          font-size: 1.2em;
+          font-weight: bold;
+          color: $primarycolor;
+        }
+
+        .neck {
+          display: none;
+        }
+
+        .create {
+          display: none;
+        }
+
+        form {
+          width: 100%;
+          padding: 5px;
+
+          .sect1 {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin-top: 0;
+
+            div {
+              width: 100%;
+              margin-top: 1em;
+            }
+          }
+
+          .sect2 {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 1em;
+            gap: 10px;
+
+            .category{
+                width: 65%;
+            }
+
+            .group{
+                width: 46%;
+            }
+
+            div {
+              width: 100%;
+            }
+            label {
+              font-size: 13px;
+            }
+
+            
+
+            .container {
+              width: 100%;
+              position: relative;
+              .box {
+                width: 100%;
+                height: 40px;
+                border-radius: 4px;
+                outline: none;
+                border: 1px solid #fff;
+                background: rgba(255, 255, 255, 0.03);
+                box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+                margin-top: 5px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 10px;
+                font-size: 13px;
+              }
+
+              .group_size {
+                position: absolute;
+                width: 100%;
+                background: #150e28;
+                padding: 10px;
+                z-index: 1;
+
+                .content {
+                  padding: 5px;
+                  width: 100%;
+                  cursor: pointer;
+                  font-size: 14px;
+                }
+              }
+            }
+          }
+
+          .attention {
+            margin-top: 1em;
+            font-size: 12px;
+            color: #ff26b9;
+            font-style: italic;
+            font-weight: 400;
+            line-height: normal;
+          }
+
+          .check {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            input {
+              width: 10px;
+            }
+            margin-top: 1em;
+            font-size: 12px;
+          }
+
+          button {
+            width: 100%;
+            margin-top: 1em;
+            height: 40px;
+            border-radius: 4px;
+            border: none;
+            cursor: pointer;
+            background: $lineargradient;
+          }
+        }
+      }
+    }
+  }
+}
