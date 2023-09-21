@@ -26,12 +26,12 @@ const Navbar = () => {
         <div className={open ? "section2-inactive" : "section2"}>
           <div className="container">
             <ul>
-              <Link>Timeline</Link>
-              <Link>Overview</Link>
+              <Link to="timeline">Timeline</Link>
+              <Link to="overview">Overview</Link>
               <Link to="faq" smooth={true}>
                 FAQs
               </Link>
-              <Link>Contact</Link>
+              <RegLink to="/contact">Contact</RegLink>
             </ul>
 
             <div className="reg-btn">
