@@ -1,0 +1,196 @@
+@import "../fontColors.scss";
+
+.footer {
+  padding: 4em 0 1em 0;
+  .wrapper {
+    width: 80vw;
+    margin: auto;
+
+    .container {
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      gap: 1em;
+
+      .container1 {
+        width: 50%;
+        .logo {
+          img {
+            width: 130px;
+          }
+        }
+
+        .info {
+          font-size: 12px;
+          width: 80%;
+          margin-top: 1em;
+        }
+
+        .tou {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          margin-top: 5em;
+
+          p {
+            font-size: 13px;
+          }
+
+          div {
+            height: 1em;
+            width: 2px;
+            background-color: $primarycolor;
+          }
+        }
+      }
+
+      .container2 {
+        width: 30%;
+
+        .head {
+          font-size: 15px;
+          color: $primarycolor;
+        }
+
+        .links {
+          display: flex;
+          flex-direction: column;
+          gap: 1em;
+          margin-top: 1em;
+
+          a {
+            font-size: 12px;
+            cursor: pointer;
+          }
+        }
+
+        .socials {
+          margin-top: 1em;
+          display: flex;
+          align-items: center;
+          gap: 1em;
+
+          p {
+            font-size: 12px;
+            color: $primarycolor;
+          }
+
+          div {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            a {
+              .icon:hover {
+                fill: $primarycolor;
+                transition: all 0.2s;
+              }
+            }
+          }
+        }
+      }
+
+      .container3 {
+        width: 20%;
+
+        .head {
+          font-size: 15px;
+          color: $primarycolor;
+        }
+
+        .call {
+          margin-top: 1em;
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          font-size: 12px;
+        }
+
+        .location {
+          margin-top: 1em;
+          display: flex;
+          gap: 10px;
+          font-size: 12px;
+          width: 80%;
+
+          .loc{
+            font-size: 18px;
+          }
+        }
+      }
+    }
+
+    .rights {
+      text-align: center;
+      font-size: 12px;
+      margin-top: 5em;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    .wrapper {
+      .container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        gap: 1em;
+
+        .container1 {
+          width: 100%;
+
+          .tou {
+            margin-top: 3em;
+          }
+        }
+
+        .container2 {
+          width: 100%;
+          margin-top: 1em;
+
+          .socials {
+            margin-top: 1em;
+            display: flex;
+            align-items: center;
+            gap: 2em;
+
+            div {
+              gap: 10px;
+              a {
+                .icon {
+                  font-size: 18px;
+                }
+              }
+            }
+          }
+        }
+
+        .container3 {
+          width: 100%;
+
+          .call {
+            gap: 1em;
+          }
+
+          .location {
+            margin-top: 2em;
+            display: flex;
+            gap: 10px;
+            font-size: 12px;
+            width: 40%;
+            .loc {
+              font-size: 22px;
+            }
+          }
+        }
+      }
+
+      .rights {
+        text-align: center;
+        font-size: 12px;
+        margin-top: 5em;
+      }
+    }
+  }
+}

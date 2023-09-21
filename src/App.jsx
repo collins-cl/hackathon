@@ -8,6 +8,7 @@ import Timeline from "./Components/Timeline/Timeline";
 import Prize from "./Components/Prizes/Prize";
 import Sponsors from "./Components/Sponsors/Sponsors";
 import Privacy from "./Components/Privacy/Privacy";
+import Footer from "./Components/Footer/Footer";
 
 function App() {
   return (
@@ -21,23 +22,7 @@ function App() {
         <Prize />
         <Sponsors />
         <Privacy />
-        <p>sdsd</p>
-        <p>sdsd</p>
-        <p>sdsd</p>
-        <p>sdsd</p>
-        <p>sdsd</p>
-        <p>sdsd</p>
-        <p>sdsd</p>
-        <p>sdsd</p>
-        <p>sdsd</p>
-        <p>sdsd</p>
-        <p>sdsd</p>
-        <p>sdsd</p>
-        <p>sdsd</p>
-        <p>sdsd</p>
-        <p>sdsd</p>
-        <p>sdsd</p>
-        <p>sdsd</p>
+        <Footer />
       </div>
     </Router>
   );
