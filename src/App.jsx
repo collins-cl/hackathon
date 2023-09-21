@@ -7,6 +7,7 @@ import Faq from "./Components/FAQs/Faq";
 import Timeline from "./Components/Timeline/Timeline";
 import Prize from "./Components/Prizes/Prize";
 import Sponsors from "./Components/Sponsors/Sponsors";
+import Privacy from "./Components/Privacy/Privacy";
 
 function App() {
   return (
@@ -17,8 +18,9 @@ function App() {
         <Overview />
         <Faq />
         <Timeline />
-        <Prize/>
-        <Sponsors/>
+        <Prize />
+        <Sponsors />
+        <Privacy />
         <p>sdsd</p>
         <p>sdsd</p>
         <p>sdsd</p>
