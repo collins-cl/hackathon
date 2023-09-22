@@ -42,10 +42,10 @@ const Overview = () => {
               </p>
             </motion.div>
             <motion.div
-              // initial={{ y: 150, opacity: 0 }}
-              // whileInView={{ y: 0, opacity: 1 }}
-              // viewport={{ once: true }}
-              // transition={{ delay: 1 }}
+              initial={{ y: 100, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ delay: 1 }}
               className="info"
             >
               Our tech hackathon is a melting pot of visionaries, and its
@@ -64,28 +64,28 @@ const Overview = () => {
         <div className="wrapper">
           <div className="details">
             <motion.div
-              // animate={{ x: -100 }}
-              // whileInView={{ x: 0 }}
-              // viewport={{ once: true }}
-              // transition={{ duration: 0.5 }}
+              animate={{ x: -50 }}
+              whileInView={{ x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5 }}
               className="head"
             >
               Rules and{"  "}
               <motion.span
-                // animate={{ y: 50, opacity: 0 }}
-                // whileInView={{ y: 0, opacity: 1 }}
-                // viewport={{ once: true }}
-                // transition={{ duration: 0.6 }}
+                animate={{ y: 50, opacity: 0 }}
+                whileInView={{ y: 0, opacity: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6 }}
               >
                 Guidelines
               </motion.span>
             </motion.div>
 
             <motion.div
-              // animate={{ y: 150, opacity: 0 }}
-              // whileInView={{ y: 0, opacity: 1 }}
-              // viewport={{ once: true }}
-              // transition={{ delay: 0.7 }}
+              animate={{ y: 100, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.7 }}
               className="info"
             >
               <img src={stargray} className="top" alt="" />
@@ -141,10 +141,10 @@ const Overview = () => {
 
           <div className="details">
             <motion.div
-              // animate={{ y: 150, opacity: 0 }}
-              // whileInView={{ y: 0, opacity: 1 }}
-              // viewport={{ once: true }}
-              // transition={{ delay: 0.5 }}
+              animate={{ y: 100, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.5 }}
               className="head"
             >
               Judging Criteria
@@ -152,10 +152,10 @@ const Overview = () => {
             </motion.div>
 
             <motion.div
-              // animate={{ x: 100, opacity: 0 }}
-              // whileInView={{ x: 0, opacity: 1 }}
-              // viewport={{ once: true }}
-              // transition={{ delay: 0.8 }}
+              animate={{ x: 50, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.8 }}
               className="info"
             >
               <div>
