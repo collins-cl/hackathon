@@ -42,7 +42,7 @@ const Timeline = () => {
                 The getlinked tech hackathon 1.0 is formally announced to the
                 general public and teams begin to get ready to register
               </motion.p>
-              {/* <img src={star} alt="" className="right" /> */}
+              <img src={star} alt="" className="right" />
             </div>
 
             <div className="one">1</div>
@@ -85,7 +85,7 @@ const Timeline = () => {
             <div className="one">3</div>
 
             <div className="date">November 18, 2023</div>
-              {/* <img src={star1} alt="" className="left" /> */}
+              <img src={star1} alt="" className="left" />
           </div>
 
           <div className="second fourth">

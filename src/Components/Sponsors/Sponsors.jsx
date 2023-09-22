@@ -48,9 +48,9 @@ const Sponsors = () => {
           className="section"
         >
           
-          {/* <img src={star} alt="" className="purple" />
+          <img src={star} alt="" className="purple" />
           <img src={star} alt="" className="white" />
-          <img src={star1} alt="" className="sec-white" /> */}
+          <img src={star1} alt="" className="sec-white" />
           <div className="container">
             <div className="row">
               <div className="one">

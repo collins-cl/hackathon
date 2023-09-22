@@ -55,9 +55,9 @@ const Prize = () => {
               alt=""
             />
 
-            {/* <img src={star} alt="" className="purple" />
+            <img src={star} alt="" className="purple" />
             <img src={star1} alt="" className="white" />
-            <img src={star1} alt="" className="sec-white" /> */}
+            <img src={star1} alt="" className="sec-white" />
           </div>
 
           <div className="details">
@@ -72,13 +72,13 @@ const Prize = () => {
                 <img src={first} alt="" />
                 <p>1st Runner</p>
                 <div>N400,000</div>
-                {/* <img src={stargray} alt="" className="sec-white" /> */}
+                <img src={stargray} alt="" className="sec-white" />
               </motion.div>
               <motion.div whileHover={{ scale: 1.1 }} className="container">
                 <img src={third} alt="" />
                 <p>3rd Runner</p>
                 <div>N150,000</div>
-                {/* <img src={star1} alt="" className="sec-white" /> */}
+                <img src={star1} alt="" className="sec-white" />
               </motion.div>
             </div>
           </div>

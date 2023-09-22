@@ -10,12 +10,12 @@ import star from "../../assets/FaqImages/star.png";
 const Privacy = () => {
   return (
     <div className="privacy">
-      {/* <img src={star} alt="" className="purple" />
+      <img src={star} alt="" className="purple" />
       <img src={star} alt="" className="sec-purple" />
       <img src={star} alt="" className="third-purple" />
       <img src={stargray} alt="" className="white" />
       <img src={stargray} alt="" className="third-white" />
-      <img src={star1} alt="" className="sec-white" /> */}
+      <img src={star1} alt="" className="sec-white" />
       <div className="wrapper">
         <div className="left">
           <motion.div

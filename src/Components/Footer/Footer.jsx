@@ -13,10 +13,10 @@ import star from "../../assets/FaqImages/star.png";
 const Footer = () => {
   return (
     <div className="footer">
-      {/* <img src={star} alt="" className="purple" />
+      <img src={star} alt="" className="purple" />
       <img src={star1} alt="" className="white" />
       <img src={stargray} alt="" className="third-white" />
-      <img src={star1} alt="" className="sec-white" /> */}
+      <img src={star1} alt="" className="sec-white" />
       <div className="wrapper">
         <div className="container">
           <div className="container1">
