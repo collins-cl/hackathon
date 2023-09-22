@@ -3,6 +3,17 @@
 .faq {
   padding: 7em 0;
   border-bottom: 1px solid rgba(211, 211, 211, 0.107);
+  position: relative;
+
+  .patch {
+    position: absolute;
+    right: 0;
+    top: -20%;
+    z-index: -1;
+    img {
+      width: 400px;
+    }
+  }
 
   .wrapper {
     max-width: 80vw;
@@ -111,6 +122,15 @@
 
 @media screen and (max-width: 768px) {
   .faq {
+    .patch {
+      position: absolute;
+      right: 0;
+      top: -30%;
+      z-index: -1;
+      img {
+        width: 100%;
+      }
+    }
     .wrapper {
       display: flex;
       flex-direction: column;

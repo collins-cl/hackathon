@@ -8,10 +8,15 @@ import { motion } from "framer-motion";
 import star1 from "../../assets/FaqImages/star-1.png";
 import star from "../../assets/FaqImages/star.png";
 import stargray from "../../assets/FaqImages/stargray.png";
+import Lens1 from "../../assets/lens1.png";
+import Lens2 from "../../assets/lens2.png";
 
 const Prize = () => {
   return (
     <div className="prize">
+      <img src={Lens1} alt="" className="lens1" />
+      <img src={Lens2} alt="" className="lens2" />
+
       <div className="box">
         <div className="div">
           <div className="title">

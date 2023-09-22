@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 import stargray from "../../assets/FaqImages/stargray.png";
 import star1 from "../../assets/FaqImages/star-1.png";
 import star from "../../assets/FaqImages/star.png";
+import lens5 from "../../assets/lens5.png";
 
 const Privacy = () => {
   return (
@@ -16,6 +17,7 @@ const Privacy = () => {
       <img src={stargray} alt="" className="white" />
       <img src={stargray} alt="" className="third-white" />
       <img src={star1} alt="" className="sec-white" />
+      <img src={lens5} alt="" className="lens5" />
       <div className="wrapper">
         <div className="left">
           <motion.div

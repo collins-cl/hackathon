@@ -3,6 +3,24 @@
 .sponsors {
   border-bottom: $borderBottom;
   padding: 6em 0;
+  position: relative;
+
+  .lens3 {
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    width: 450px;
+    bottom: -30%;
+  }
+
+  .lens4 {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    margin-top: 0;
+    width: 500px;
+  }
+
   .wrapper {
     display: flex;
     justify-content: center;
@@ -31,20 +49,20 @@
       margin-top: 3em;
       position: relative;
 
-      .purple{
+      .purple {
         position: absolute;
         top: 0;
         margin-top: -3em;
         width: 15px;
       }
 
-      .white{
+      .white {
         position: absolute;
         right: 45%;
         width: 15px;
       }
 
-      .sec-white{
+      .sec-white {
         position: absolute;
         bottom: 15%;
         right: 45%;
@@ -92,128 +110,6 @@
         .row1 {
           margin-top: 1em;
         }
-
-        //     .row {
-        //       .one {
-        //         border-right:1px solid #d434fe;
-        //         padding: 10px;
-        //         position: relative;
-        //         // &::after {
-        //         //   content: "";
-        //         //   height: 4em;
-        //         //   width: 2px;
-        //         //   background-color: $primarycolor;
-        //         //   position: absolute;
-        //         //   right: 0;
-        //         //   bottom: 0;
-        //         //   margin-bottom: 1em;
-        //         //   margin-right: -2em;
-        //         // }
-        //       }
-        //       .two {
-        //         position: relative;
-        //         border-bottom: 1px solid #d434fe;
-
-        //         // &::before {
-        //         //   content: "";
-        //         //   height: 2px;
-        //         //   width: 10em;
-        //         //   background-color: $primarycolor;
-        //         //   position: absolute;
-        //         //   right: 0;
-        //         //   bottom: 0;
-        //         //   margin-bottom: -2em;
-        //         //   margin-right: -0.5em;
-        //         // }
-
-        //         &::after {
-        //           content: "";
-        //           height: 4em;
-        //           width: 2px;
-        //           background-color: $primarycolor;
-        //           position: absolute;
-        //           right: 0;
-        //           bottom: 0;
-        //           margin-bottom: -0.5em;
-        //           margin-right: -2em;
-        //         }
-        //         img {
-        //           width: 150px;
-        //         }
-        //       }
-
-        //       .four {
-        //         position: relative;
-
-        //         &::after {
-        //           content: "";
-        //           height: 2px;
-        //           width: 9em;
-        //           background-color: $primarycolor;
-        //           position: absolute;
-        //           right: 0;
-        //           bottom: 0;
-        //           margin-bottom: -0.9em;
-        //           margin-right: -3.1em;
-        //         }
-        //       }
-        //     }
-
-        //     .row1 {
-        //       margin-top: 2em;
-        //       .five {
-        //         position: relative;
-        //         &::before {
-        //           content: "";
-        //           position: absolute;
-        //           width: 8em;
-        //           height: 2px;
-        //           background-color: $primarycolor;
-        //           top: 0;
-        //           left: 0;
-        //           margin-left: -2em;
-        //           margin-top: -1.5em;
-        //         }
-        //       }
-
-        //       .six {
-        //         position: relative;
-        //         &::after {
-        //           content: "";
-        //           height: 4em;
-        //           width: 2px;
-        //           background-color: $primarycolor;
-        //           position: absolute;
-        //           left: 0;
-        //           bottom: 0;
-        //           margin-bottom: -0.1em;
-        //           margin-left: -2em;
-        //         }
-
-        //         img {
-        //           width: 130px;
-        //         }
-        //       }
-        //       .three {
-        //         position: relative;
-
-        //         &::after {
-        //           content: "";
-        //           height: 4em;
-        //           width: 2px;
-        //           background-color: $primarycolor;
-        //           position: absolute;
-        //           left: 0;
-        //           bottom: 0;
-        //           margin-bottom: -0.1em;
-        //           margin-left: -0.2em;
-        //         }
-
-        //         img {
-        //           width: 130px;
-        //         }
-        //       }
-        //     }
       }
     }
   }
@@ -223,6 +119,23 @@
   .sponsors {
     max-width: 90vw;
     margin: auto;
+
+    .lens3 {
+      position: absolute;
+      z-index: -1;
+      right: -30%;
+      width: 70%;
+      bottom: -30%;
+    }
+
+    .lens4 {
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      left: -30%;
+      margin-top: 0;
+      width: 70%;
+    }
     .wrapper {
       display: flex;
       justify-content: center;

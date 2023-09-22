@@ -2,6 +2,22 @@
 
 .prize {
   padding: 7em 0;
+  position: relative;
+
+  .lens1 {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    width: 400px;
+  }
+
+  .lens2 {
+    position: absolute;
+    z-index: -1;
+    margin-top: -8em;
+    width: 800px;
+  }
 
   .box {
     width: 100%;
@@ -155,6 +171,24 @@
 @media screen and (max-width: 768px) {
   .prize {
     padding: 7em 0;
+
+    
+  .lens1 {
+    position: absolute;
+    z-index: -1;
+    top: 60%;
+    right: 0;
+    width: 60%;
+  }
+
+  .lens2 {
+    position: absolute;
+    z-index: -1;
+    margin-top: 0em;
+    left: -15%;
+    width: 100%;
+  }
+
 
     .box {
       width: 100%;

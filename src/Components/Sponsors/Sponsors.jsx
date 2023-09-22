@@ -8,12 +8,17 @@ import spons5 from "../../assets/SponsorsImages/spons5.png";
 import spons6 from "../../assets/SponsorsImages/Paybox.png";
 import star1 from "../../assets/FaqImages/star-1.png";
 import star from "../../assets/FaqImages/star.png";
+import lens3 from "../../assets/lens3.png";
+import lens4 from "../../assets/lens4.png";
 
 import { motion } from "framer-motion";
 
 const Sponsors = () => {
   return (
     <div className="sponsors">
+      <img src={lens3} alt="" className="lens3" />
+      <img src={lens4} alt="" className="lens4" />
+
       <div className="wrapper">
         <motion.div
           animate={{ y: 50, opacity: 0 }}
@@ -47,7 +52,6 @@ const Sponsors = () => {
           }}
           className="section"
         >
-          
           <img src={star} alt="" className="purple" />
           <img src={star} alt="" className="white" />
           <img src={star1} alt="" className="sec-white" />

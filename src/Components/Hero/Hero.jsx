@@ -9,10 +9,14 @@ import Dude from "../../assets/heroimages/man.png";
 import World from "../../assets/heroimages/world.png";
 import { Link } from "react-router-dom";
 import Timer from "../Timer/Timer";
+import blur from "../../assets/spotlight.svg";
 
 const Hero = () => {
   return (
     <div className="hero">
+      <div className="patch">
+        <img src={blur} alt="" />
+      </div>
       <div className="intro">
         <div className="icon">
           <img width={20} src={Star} alt="" />

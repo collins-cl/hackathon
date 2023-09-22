@@ -5,6 +5,12 @@
   border-bottom: $borderBottom;
   position: relative;
 
+  .lens5{
+    position: absolute;
+    bottom: -10%;
+    width: 450px;
+  }
+
   .purple {
     position: absolute;
     bottom: 20%;
@@ -172,6 +178,12 @@
 
 @media screen and (max-width: 768px) {
   .privacy {
+    .lens5{
+      position: absolute;
+      bottom: -10%;
+      width: 100%;
+    }
+  
     .wrapper {
       max-width: 80vw;
       margin: auto;

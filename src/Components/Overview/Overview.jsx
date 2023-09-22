@@ -8,6 +8,7 @@ import starwhite from "../../assets/OverviewImages/star-1.png";
 import arrow from "../../assets/OverviewImages/arrow.png";
 import duo from "../../assets/OverviewImages/duo.png";
 import { motion } from "framer-motion";
+import blur from "../../assets/spotlight.png";
 
 const Overview = () => {
   return (
@@ -61,6 +62,9 @@ const Overview = () => {
       </div>
 
       <div className="rules">
+        <div className="patchs">
+          <img src={blur} width={400} alt="" />
+        </div>
         <div className="wrapper">
           <div className="details">
             <motion.div
@@ -119,6 +123,9 @@ const Overview = () => {
       </div>
 
       <div className="criteria">
+        <div className="patch">
+          <img src={blur} alt="" />
+        </div>
         <div className="wrapper">
           <div className="image">
             <img src={star} className="top" alt="" />

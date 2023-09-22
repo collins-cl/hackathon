@@ -4,6 +4,14 @@
   padding-top: 2em;
   border-top: 1px solid rgba(211, 211, 211, 0.107);
   border-bottom: 1px solid rgba(211, 211, 211, 0.107);
+  position: relative;
+
+  .patch {
+    position: absolute;
+    top: 0;
+    margin-top: -8em;
+    z-index: -1;
+  }
 
   .intro {
     max-width: 75vw;
@@ -129,6 +137,14 @@
 
 @media screen and (max-width: 768px) {
   .hero {
+    .patch {
+      margin-top: 0em;
+      left: 0;
+      img{
+        width: 100%;
+      }
+    }
+
     .intro {
       max-width: 90vw;
       margin: auto;

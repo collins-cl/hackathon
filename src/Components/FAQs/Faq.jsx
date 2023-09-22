@@ -9,10 +9,15 @@ import star1 from "../../assets/FaqImages/star-1.png";
 import star from "../../assets/FaqImages/star.png";
 import stargray from "../../assets/FaqImages/stargray.png";
 import { motion } from "framer-motion";
+import blur from "../../assets/spotlight.png";
+import halfblur from "../../assets/halfspot.png";
 
 const Faq = () => {
   return (
     <div className="faq">
+      <div className="patch">
+        <img src={halfblur} alt="" />
+      </div>
       <div className="wrapper">
         <div className="details">
           <motion.div
@@ -24,7 +29,7 @@ const Faq = () => {
           >
             Frequently Asked
             <span> Question</span>
-             <img src={star} alt="" className="right" />
+            <img src={star} alt="" className="right" />
           </motion.div>
 
           <motion.div
