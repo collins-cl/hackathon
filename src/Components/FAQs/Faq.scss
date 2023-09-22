@@ -209,3 +209,40 @@
     }
   }
 }
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .faq {
+    .patch {
+      position: absolute;
+      right: 0;
+      top: -10%;
+      z-index: -1;
+      img {
+        width: 100%;
+      }
+    }
+
+    .wrapper {
+      max-width: 90vw;
+      margin: auto;
+      gap: 3em;
+      .details {
+        height: 100%;
+        width: 100%;
+        .head {
+          width: 50%;
+        }
+        .paragraph {
+          width: 80%;
+        }
+      }
+
+      .image {
+        position: relative;
+        img {
+          width: 90%;
+        }
+      }
+    }
+  }
+}

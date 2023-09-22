@@ -140,7 +140,7 @@
     .patch {
       margin-top: 0em;
       left: 0;
-      img{
+      img {
         width: 100%;
       }
     }
@@ -233,6 +233,59 @@
           left: 0;
           margin-left: 0;
           width: 80%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .hero {
+    .patch {
+      img {
+        width: 100%;
+      }
+    }
+    .intro {
+      max-width: 90vw;
+
+      p {
+        font-size: 1.9em;
+      }
+    }
+
+    .container {
+      max-width: 90vw;
+      margin: auto;
+      float: none;
+      display: flex;
+      justify-content: space-between;
+      margin-top: 6em;
+
+      .box1 {
+        .top {
+          font-size: 2.8em;
+
+          margin-top: 0em;
+
+          .f-p {
+            img {
+              width: 50px;
+            }
+          }
+        }
+      }
+
+      .box2 {
+        position: relative;
+        img {
+          width: 100%;
+        }
+
+        .abs-image {
+          position: absolute;
+          left: 0;
+          width: 100%;
         }
       }
     }

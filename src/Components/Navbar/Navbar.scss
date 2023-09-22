@@ -35,20 +35,14 @@
             border-radius: 3px;
             outline: none;
             border: none;
-            background: linear-gradient(
-              270deg,
-              #903aff 0%,
-              #d434fe 56.42%,
-              #ff26b9 99.99%,
-              #fe34b9 100%
-            );
+            background: $lineargradient;
             transition: all 0.3s ease-in;
 
             &:hover {
               background: transparent;
               border-width: 1px;
               border-style: solid;
-            
+
               border-image: $hoverGradient;
             }
           }
@@ -71,7 +65,7 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .navbar {
     max-width: 90vw;
     margin: auto;
@@ -123,13 +117,7 @@
               border-radius: 3px;
               outline: none;
               border: none;
-              background: linear-gradient(
-                270deg,
-                #903aff 0%,
-                #d434fe 56.42%,
-                #ff26b9 99.99%,
-                #fe34b9 100%
-              );
+              background: $lineargradient;
             }
           }
 
@@ -156,13 +144,7 @@
               z-index: -1;
               left: 0;
               margin-left: -1px;
-              background: linear-gradient(
-                270deg,
-                #903aff 0%,
-                #d434fe 56.42%,
-                #ff26b9 99.99%,
-                #fe34b9 100%
-              );
+              background: $lineargradient;
             }
           }
         }

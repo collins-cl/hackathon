@@ -172,23 +172,21 @@
   .prize {
     padding: 7em 0;
 
-    
-  .lens1 {
-    position: absolute;
-    z-index: -1;
-    top: 60%;
-    right: 0;
-    width: 60%;
-  }
+    .lens1 {
+      position: absolute;
+      z-index: -1;
+      top: 60%;
+      right: 0;
+      width: 60%;
+    }
 
-  .lens2 {
-    position: absolute;
-    z-index: -1;
-    margin-top: 0em;
-    left: -15%;
-    width: 100%;
-  }
-
+    .lens2 {
+      position: absolute;
+      z-index: -1;
+      margin-top: 0em;
+      left: -15%;
+      width: 100%;
+    }
 
     .box {
       width: 100%;
@@ -251,6 +249,82 @@
                 width: 110px;
                 margin-top: -5em;
               }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .prize {
+    .lens1 {
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      right: 0;
+      width: 30%;
+    }
+
+    .lens2 {
+      position: absolute;
+      z-index: -1;
+      margin-top: -8em;
+      width: 80%;
+    }
+
+    .box {
+      width: 100%;
+      .div {
+        .title {
+          width: 40%;
+          margin-left: 38%;
+          flex-direction: column;
+        }
+      }
+      .wrapper {
+        display: flex;
+        max-width: 90vw;
+        margin: auto;
+
+        .image {
+          position: relative;
+          img{width: 100%;}
+        }
+
+        .details {
+          display: flex;
+          flex-direction: column;
+
+          .ranks {
+            display: flex;
+            align-items: center;
+            gap: 1em;
+            margin-top: 8em;
+
+            img {
+              width: 100%;
+              margin-top: -4em;
+            }
+
+            div {
+              color: $primarycolor;
+            }
+          }
+
+          .container2 {
+            p {
+              width: 50%;
+              line-height: 1.3;
+            }
+            img {
+              width: 100%;
+              margin-top: -6em;
+            }
+
+            div {
+              color: $primarycolor;
             }
           }
         }
