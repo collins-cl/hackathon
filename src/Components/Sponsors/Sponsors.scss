@@ -123,9 +123,10 @@
     .lens3 {
       position: absolute;
       z-index: -1;
-      right: -30%;
+      right: 0;
       width: 70%;
       bottom: -30%;
+      display: none;
     }
 
     .lens4 {
