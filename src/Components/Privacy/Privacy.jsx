@@ -19,10 +19,10 @@ const Privacy = () => {
       <div className="wrapper">
         <div className="left">
           <motion.div
-            // animate={{ y: 50, opacity: 0 }}
-            // whileInView={{ y: 0, opacity: 1 }}
-            // viewport={{ once: true }}
-            // transition={{ delay: 0.5 }}
+            animate={{ y: 50, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.5 }}
             className="head"
           >
             Privacy Policy and <span>Terms</span>
@@ -31,10 +31,10 @@ const Privacy = () => {
           <div className="update">Last updated on September 12, 2023</div>
 
           <motion.div
-            // animate={{ y: 70, opacity: 0 }}
-            // whileInView={{ y: 0, opacity: 1 }}
-            // viewport={{ once: true }}
-            // transition={{ delay: 1 }}
+            animate={{ y: 70, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ delay: 1 }}
             className="info"
           >
             Below are our privacy & policy, which outline a lot of goodies. it’s
@@ -42,10 +42,10 @@ const Privacy = () => {
           </motion.div>
 
           <motion.div
-            // animate={{ x: 100, opacity: 0 }}
-            // whileInView={{ x: 0, opacity: 1 }}
-            // viewport={{ once: true }}
-            // transition={{ delay: 1 }}
+            animate={{ x: -50, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ delay: 1 }}
             className="section"
           >
             <div className="top">

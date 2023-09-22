@@ -16,10 +16,10 @@ const Prize = () => {
         <div className="div">
           <div className="title">
             <motion.div
-              // animate={{ y: 50, opacity: 0 }}
-              // whileInView={{ y: 0, opacity: 1 }}
-              // viewport={{ once: true }}
-              // transition={{ delay: 0.5 }}
+              animate={{ y: 50, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.5 }}
               className="head"
             >
               Prizes and <br />
@@ -27,10 +27,10 @@ const Prize = () => {
             </motion.div>
 
             <motion.div
-              // animate={{ x: 100, opacity: 0 }}
-              // whileInView={{ x: 0, opacity: 1 }}
-              // viewport={{ once: true }}
-              // transition={{ delay: 1 }}
+              animate={{ x: -50, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ delay: 1 }}
               className="info"
             >
               Highlight of the prizes or rewards for winners and for

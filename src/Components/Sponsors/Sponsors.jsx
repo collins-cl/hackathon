@@ -16,20 +16,20 @@ const Sponsors = () => {
     <div className="sponsors">
       <div className="wrapper">
         <motion.div
-          // animate={{ y: 50, opacity: 0 }}
-          // whileInView={{ y: 0, opacity: 1 }}
-          // viewport={{ once: true }}
-          // transition={{ delay: 0.5 }}
+          animate={{ y: 50, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.5 }}
           className="head"
         >
           Partners and Sponsors
         </motion.div>
 
         <motion.div
-          // animate={{ y: 100, opacity: 0 }}
-          // whileInView={{ y: 0, opacity: 1 }}
-          // viewport={{ once: true }}
-          // transition={{ delay: 1 }}
+          animate={{ y: 100, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ delay: 1 }}
           className="info"
         >
           Getlinked Hackathon 1.0 is honored to have the following major
