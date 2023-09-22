@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "../Hero/Hero.scss";
 import Star from "../../assets/heroimages/star.png";
 import { motion } from "framer-motion";
@@ -12,6 +12,32 @@ import Timer from "../Timer/Timer";
 import blur from "../../assets/spotlight.svg";
 
 const Hero = () => {
+  const [text, setText] = useState("Igniting a Revolution in HR Innovation");
+  const [currentIndex, setCurrentIndex] = useState(9);
+  const [reverse, setReverse] = useState(false);
+
+  useEffect(() => {
+    const typewriterInterval = setInterval(() => {
+      if (!reverse) {
+        if (currentIndex < text.length) {
+          setCurrentIndex((prevIndex) => prevIndex + 1);
+        } else {
+          setReverse(true);
+        }
+      } else {
+        if (currentIndex > 9) {
+          setCurrentIndex((prevIndex) => prevIndex - 1);
+        } else {
+          setReverse(false);
+        }
+      }
+    }, 100); // Adjust typing speed as needed
+
+    return () => {
+      clearInterval(typewriterInterval);
+    };
+  }, [currentIndex, text, reverse]);
+
   return (
     <div className="hero">
       <div className="patch">
@@ -19,10 +45,17 @@ const Hero = () => {
       </div>
       <div className="intro">
         <div className="icon">
-          <img width={20} src={Star} alt="" />
+          <motion.img
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ repeat: Infinity, duration: 2 }}
+            width={20}
+            src={Star}
+            alt=""
+          />
         </div>
 
-        <p>Igniting a Revolution in HR Innovation</p>
+        <p>{text.slice(0, currentIndex)}</p>
       </div>
 
       <div className="container">

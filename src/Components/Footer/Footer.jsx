@@ -13,10 +13,38 @@ import star from "../../assets/FaqImages/star.png";
 const Footer = () => {
   return (
     <div className="footer">
-      <img src={star} alt="" className="purple" />
-      <img src={star1} alt="" className="white" />
-      <img src={stargray} alt="" className="third-white" />
-      <img src={star1} alt="" className="sec-white" />
+      <motion.img
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ repeat: Infinity, duration: 2, delay: 0.1 }}
+        src={star}
+        alt=""
+        className="purple"
+      />
+      <motion.img
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ repeat: Infinity, duration: 2, delay: 0.2 }}
+        src={star1}
+        alt=""
+        className="white"
+      />
+      <motion.img
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ repeat: Infinity, duration: 2, delay: 0.3 }}
+        src={stargray}
+        alt=""
+        className="third-white"
+      />
+      <motion.img
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ repeat: Infinity, duration: 2, delay: 0.4 }}
+        src={star1}
+        alt=""
+        className="sec-white"
+      />
       <div className="wrapper">
         <div className="container">
           <div className="container1">

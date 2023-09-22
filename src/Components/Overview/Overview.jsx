@@ -24,7 +24,14 @@ const Overview = () => {
               src={BigIdea}
               alt=""
             />
-            <img src={star} alt="" className="left" />
+            <motion.img
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ repeat: Infinity, duration: 2, delay: 0.5 }}
+              src={star}
+              alt=""
+              className="left"
+            />
             <img src={arrow} className="right" alt="" />
           </div>
 
@@ -39,7 +46,14 @@ const Overview = () => {
               Introduction to getlinked
               <span> tech Hackathon 1.0</span>
               <p>
-                <img src={star} className="right" alt="" />
+                <motion.img
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ repeat: Infinity, duration: 2, delay: 0.8 }}
+                  src={star}
+                  className="right"
+                  alt=""
+                />
               </p>
             </motion.div>
             <motion.div
@@ -92,8 +106,22 @@ const Overview = () => {
               transition={{ delay: 0.7 }}
               className="info"
             >
-              <img src={stargray} className="top" alt="" />
-              <img src={starwhite} className="bottom" alt="" />
+              <motion.img
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ repeat: Infinity, duration: 2, delay: 0.9 }}
+                src={stargray}
+                className="top"
+                alt=""
+              />
+              <motion.img
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ repeat: Infinity, duration: 2, delay: 1 }}
+                src={starwhite}
+                className="bottom"
+                alt=""
+              />
               Our tech hackathon is a melting pot of visionaries, and its
               purpose is as clear as day: to shape the future. Whether you're a
               coding genius, a design maverick, or a concept wizard, you'll have
@@ -128,7 +156,14 @@ const Overview = () => {
         </div>
         <div className="wrapper">
           <div className="image">
-            <img src={star} className="top" alt="" />
+            <motion.img
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ repeat: Infinity, duration: 2, delay: 0.3 }}
+              src={star}
+              className="top"
+              alt=""
+            />
             <motion.img
               animate={{ opacity: 0, scale: 0.3 }}
               whileInView={{ opacity: 1, scale: 1 }}
@@ -142,8 +177,22 @@ const Overview = () => {
               width={550}
               alt=""
             />
-            <img src={stargray} className="middle" alt="" />
-            <img src={starwhite} className="bottom" alt="" />
+            <motion.img
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ repeat: Infinity, duration: 2, delay: 0.4 }}
+              src={stargray}
+              className="middle"
+              alt=""
+            />
+            <motion.img
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ repeat: Infinity, duration: 2, delay: 0.5 }}
+              src={starwhite}
+              className="bottom"
+              alt=""
+            />
           </div>
 
           <div className="details">

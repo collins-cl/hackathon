@@ -11,12 +11,54 @@ import lens5 from "../../assets/lens5.png";
 const Privacy = () => {
   return (
     <div className="privacy">
-      <img src={star} alt="" className="purple" />
-      <img src={star} alt="" className="sec-purple" />
-      <img src={star} alt="" className="third-purple" />
-      <img src={stargray} alt="" className="white" />
-      <img src={stargray} alt="" className="third-white" />
-      <img src={star1} alt="" className="sec-white" />
+      <motion.img
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ repeat: Infinity, duration: 2, delay: 0.1 }}
+        src={star}
+        alt=""
+        className="purple"
+      />
+      <motion.img
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ repeat: Infinity, duration: 2, delay: 0.2 }}
+        src={star}
+        alt=""
+        className="sec-purple"
+      />
+      <motion.img
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ repeat: Infinity, duration: 2, delay: 0.3 }}
+        src={star}
+        alt=""
+        className="third-purple"
+      />
+      <motion.img
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ repeat: Infinity, duration: 2, delay: 0.4 }}
+        src={stargray}
+        alt=""
+        className="white"
+      />
+      <motion.img
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ repeat: Infinity, duration: 2, delay: 0.5 }}
+        src={stargray}
+        alt=""
+        className="third-white"
+      />
+      <motion.img
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ repeat: Infinity, duration: 2, delay: 0.6}}
+        src={star1}
+        alt=""
+        className="sec-white"
+      />
       <img src={lens5} alt="" className="lens5" />
       <div className="wrapper">
         <div className="left">

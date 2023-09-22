@@ -198,7 +198,7 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .register {
     padding: 2em 0;
     .wrapper {
@@ -301,7 +301,7 @@
                   background: red;
                   padding: 10px;
                   z-index: 1;
-                right: 0;
+                  right: 0;
                   margin-top: 5px;
 
                   .content {
@@ -346,3 +346,4 @@
     }
   }
 }
+

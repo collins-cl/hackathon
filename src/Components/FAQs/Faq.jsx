@@ -29,7 +29,14 @@ const Faq = () => {
           >
             Frequently Asked
             <span> Question</span>
-            <img src={star} alt="" className="right" />
+            <motion.img
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ repeat: Infinity, duration: 2, delay: 0.2 }}
+              src={star}
+              alt=""
+              className="right"
+            />
           </motion.div>
 
           <motion.div
@@ -152,9 +159,32 @@ const Faq = () => {
           <img src={_} alt="" className="one" />
           <img src={_} alt="" className="two" />
           <img src={_} alt="" className="three" />
-          <img src={star} alt="" className="star" />
-          <img src={star} alt="" className="right" />
-          <img src={stargray} alt="" className="left" />
+          <motion.img
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ repeat: Infinity, duration: 2, delay: 0.3 }}
+            src={star}
+            alt=""
+            className="star"
+          />
+
+          <motion.img
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ repeat: Infinity, duration: 2, delay: 0.4 }}
+            src={star}
+            alt=""
+            className="right"
+          />
+
+          <motion.img
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ repeat: Infinity, duration: 2, delay: 0.5 }}
+            src={stargray}
+            alt=""
+            className="left"
+          />
           <motion.img
             animate={{ opacity: 0, scale: 0.3 }}
             whileInView={{ opacity: 1, scale: 1 }}
@@ -169,7 +199,14 @@ const Faq = () => {
             alt=""
             className="main"
           />
-          <img src={star1} alt="" className="star3" />
+          <motion.img
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ repeat: Infinity, duration: 2, delay: 0.6 }}
+            src={star1}
+            alt=""
+            className="star3"
+          />
         </div>
       </div>
     </div>
