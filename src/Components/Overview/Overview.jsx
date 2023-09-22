@@ -16,10 +16,10 @@ const Overview = () => {
         <div className="wrapper">
           <div className="img">
             <motion.img
-              // initial={{ opacity: 0 }}
-              // whileInView={{ opacity: 1 }}
-              // viewport={{ once: true }}
-              // transition={{ delay: 1 }}
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ delay: 1 }}
               src={BigIdea}
               alt=""
             />
@@ -29,10 +29,10 @@ const Overview = () => {
 
           <div className="details">
             <motion.div
-              // initial={{ x: -150, opacity: 0 }}
-              // whileInView={{ x: 0, opacity: 1 }}
-              // viewport={{ once: true }}
-              // transition={{ delay: 0.5 }}
+              initial={{ x: -50, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.5 }}
               className="head"
             >
               Introduction to getlinked
