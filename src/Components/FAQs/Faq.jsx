@@ -8,6 +8,7 @@ import faq from "../../assets/FaqImages/faq.png";
 import star1 from "../../assets/FaqImages/star-1.png";
 import star from "../../assets/FaqImages/star.png";
 import stargray from "../../assets/FaqImages/stargray.png";
+import { motion } from "framer-motion";
 
 const Faq = () => {
   return (
@@ -128,7 +129,20 @@ const Faq = () => {
           <img src={_} alt="" className="two" />
           <img src={_} alt="" className="three" />
           <img src={star} alt="" className="star" />
-          <img src={faq} width={550} alt="" className="main" />
+          <motion.img
+            animate={{ opacity: 0, scale: 0.3 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            transition={{
+              duration: 0.8,
+              delay: 0.5,
+              ease: [0, 0.71, 0.2, 1.01],
+            }}
+            src={faq}
+            width={550}
+            alt=""
+            className="main"
+          />
           <img src={star1} alt="" className="star3" />
         </div>
       </div>

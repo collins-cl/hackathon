@@ -4,6 +4,7 @@ import logo from "../../assets/PrizeImage/prize.png";
 import first from "../../assets/PrizeImage/gold_medal.png";
 import second from "../../assets/PrizeImage/silver_medal.png";
 import third from "../../assets/PrizeImage/bronze_medal.png";
+import { motion } from "framer-motion";
 
 const Prize = () => {
   return (
@@ -25,7 +26,19 @@ const Prize = () => {
 
         <div className="wrapper">
           <div className="image">
-            <img src={logo} width={400} alt="" />
+            <motion.img
+              animate={{ opacity: 0, scale: 0.3 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              transition={{
+                duration: 0.8,
+                delay: 0.5,
+                ease: [0, 0.71, 0.2, 1.01],
+              }}
+              src={logo}
+              width={400}
+              alt=""
+            />
           </div>
 
           <div className="details">

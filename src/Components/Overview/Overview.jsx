@@ -20,7 +20,7 @@ const Overview = () => {
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
-              transition={{ delay: 1, duration: 0.5 }}
+              transition={{ delay: 1 }}
               src={BigIdea}
               alt=""
             />
@@ -84,7 +84,19 @@ const Overview = () => {
           </div>
 
           <div className="girl">
-            <img src={girl} alt="" />
+            <motion.img
+              className="box"
+              animate={{ opacity: 0, scale: 0.3 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              transition={{
+                duration: 0.8,
+                delay: 0.5,
+                ease: [0, 0.71, 0.2, 1.01],
+              }}
+              src={girl}
+              alt=""
+            />
           </div>
         </div>
       </div>
@@ -93,7 +105,19 @@ const Overview = () => {
         <div className="wrapper">
           <div className="image">
             <img src={star} className="top" alt="" />
-            <img src={duo} width={550} alt="" />
+            <motion.img
+              animate={{ opacity: 0, scale: 0.3 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              transition={{
+                duration: 0.8,
+                delay: 0.5,
+                ease: [0, 0.71, 0.2, 1.01],
+              }}
+              src={duo}
+              width={550}
+              alt=""
+            />
             <img src={starwhite} className="bottom" alt="" />
           </div>
 

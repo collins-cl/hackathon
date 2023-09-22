@@ -49,8 +49,12 @@ const Hero = () => {
         <div className="box2">
           <img src={Dude} alt="" />
           <motion.img
-            animate={{ rotate: 720 }}
-            transition={{duration: 2}}
+            animate={{ scale: [0.3, 0.4, 0.8, 0.71, 0.3, 0.7, 0.9] }}
+            transition={{
+              duration: 2,
+              delay:0.5,
+              ease: [0, 0.71, 0.2, 1.01],
+            }}
             className="abs-image"
             src={World}
             alt=""

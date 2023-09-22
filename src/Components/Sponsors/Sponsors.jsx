@@ -6,6 +6,7 @@ import spons3 from "../../assets/SponsorsImages/spons3.png";
 import spons4 from "../../assets/SponsorsImages/spons4.png";
 import spons5 from "../../assets/SponsorsImages/spons5.png";
 import spons6 from "../../assets/SponsorsImages/Paybox.png";
+import { motion } from "framer-motion";
 
 const Sponsors = () => {
   return (
@@ -18,7 +19,17 @@ const Sponsors = () => {
           companies as its partners and sponsors
         </div>
 
-        <div className="section">
+        <motion.div
+          animate={{ opacity: 0, y: 10 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{
+            duration: 1,
+            delay: 0.5,
+            ease: [0, 0.71, 0.2, 1.01],
+          }}
+          className="section"
+        >
           <div className="container">
             <div className="row">
               <div className="one">
@@ -43,7 +54,7 @@ const Sponsors = () => {
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

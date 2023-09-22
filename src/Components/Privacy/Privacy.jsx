@@ -2,6 +2,7 @@ import React from "react";
 import "../Privacy/Privacy.scss";
 import Logo from "../../assets/PrivacyImages/lock.png";
 import Lock from "../../assets/PrivacyImages/Vector.png";
+import { motion } from "framer-motion";
 
 const Privacy = () => {
   return (
@@ -51,7 +52,19 @@ const Privacy = () => {
 
         <div className="right">
           <img className="lock" src={Lock} alt="" />
-          <img src={Logo} width={420} alt="" />
+          <motion.img
+            animate={{ opacity: 0, scale: 0.3 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            transition={{
+              duration: 0.8,
+              delay: 0.5,
+              ease: [0, 0.71, 0.2, 1.01],
+            }}
+            src={Logo}
+            width={420}
+            alt=""
+          />
         </div>
       </div>
     </div>
