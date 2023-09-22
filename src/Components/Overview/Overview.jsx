@@ -8,6 +8,7 @@ import starwhite from "../../assets/OverviewImages/star-1.png";
 import arrow from "../../assets/OverviewImages/arrow.png";
 import duo from "../../assets/OverviewImages/duo.png";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 const Overview = () => {
   return (
@@ -15,7 +16,14 @@ const Overview = () => {
       <div className="introduction">
         <div className="wrapper">
           <div className="img">
-            <img src={BigIdea} alt="" />
+            <motion.img
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ delay: 1, duration: 0.5 }}
+              src={BigIdea}
+              alt=""
+            />
             <img src={star} alt="" className="left" />
             <img src={arrow} className="right" alt="" />
           </div>
@@ -44,9 +52,23 @@ const Overview = () => {
       <div className="rules">
         <div className="wrapper">
           <div className="details">
-            <div className="head">
-              Rules and <span>Guidelines</span>
-            </div>
+            <motion.div
+              animate={{ x: -100 }}
+              whileInView={{ x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5 }}
+              className="head"
+            >
+              Rules and{"  "}
+              <motion.span
+                animate={{ y: 50, opacity: 0 }}
+                whileInView={{ y: 0, opacity: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 3 }}
+              >
+                Guidelines
+              </motion.span>
+            </motion.div>
 
             <div className="info">
               <img src={stargray} className="top" alt="" />
