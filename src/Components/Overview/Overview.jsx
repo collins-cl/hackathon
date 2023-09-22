@@ -7,7 +7,6 @@ import stargray from "../../assets/OverviewImages/stargray.png";
 import starwhite from "../../assets/OverviewImages/star-1.png";
 import arrow from "../../assets/OverviewImages/arrow.png";
 import duo from "../../assets/OverviewImages/duo.png";
-import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
 const Overview = () => {
@@ -29,14 +28,26 @@ const Overview = () => {
           </div>
 
           <div className="details">
-            <div className="head">
+            <motion.div
+              initial={{ x: -150, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.5 }}
+              className="head"
+            >
               Introduction to getlinked
               <span> tech Hackathon 1.0</span>
               <p>
                 <img src={star} className="right" alt="" />
               </p>
-            </div>
-            <div className="info">
+            </motion.div>
+            <motion.div
+              initial={{ y: 150, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ delay: 1 }}
+              className="info"
+            >
               Our tech hackathon is a melting pot of visionaries, and its
               purpose is as clear as day: to shape the future. Whether you're a
               coding genius, a design maverick, or a concept wizard, you'll have
@@ -44,7 +55,7 @@ const Overview = () => {
               real-world problems, pushing the boundaries of technology, and
               creating solutions that can change the world, that's what we're
               all about!
-            </div>
+            </motion.div>
           </div>
         </div>
       </div>
@@ -64,13 +75,19 @@ const Overview = () => {
                 animate={{ y: 50, opacity: 0 }}
                 whileInView={{ y: 0, opacity: 1 }}
                 viewport={{ once: true }}
-                transition={{ duration: 3 }}
+                transition={{ duration: 0.6 }}
               >
                 Guidelines
               </motion.span>
             </motion.div>
 
-            <div className="info">
+            <motion.div
+              animate={{ y: 150, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.7 }}
+              className="info"
+            >
               <img src={stargray} className="top" alt="" />
               <img src={starwhite} className="bottom" alt="" />
               Our tech hackathon is a melting pot of visionaries, and its
@@ -80,7 +97,7 @@ const Overview = () => {
               real-world problems, pushing the boundaries of technology, and
               creating solutions that can change the world, that's what we're
               all about!
-            </div>
+            </motion.div>
           </div>
 
           <div className="girl">
@@ -118,16 +135,29 @@ const Overview = () => {
               width={550}
               alt=""
             />
+            <img src={stargray} className="middle" alt="" />
             <img src={starwhite} className="bottom" alt="" />
           </div>
 
           <div className="details">
-            <div className="head">
+            <motion.div
+              animate={{ y: 150, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.5 }}
+              className="head"
+            >
               Judging Criteria
               <span> Key attributes</span>
-            </div>
+            </motion.div>
 
-            <div className="info">
+            <motion.div
+              animate={{ x: 100, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.8 }}
+              className="info"
+            >
               <div>
                 <span>Innovation and Creativity:</span> Evaluate the uniqueness
                 and creativity of the solution. Consider whether it addresses a
@@ -163,11 +193,9 @@ const Overview = () => {
                 hackathon, including deadlines, use of specific technologies or
                 APIs, and any other competition-specific requirements.
               </div>
-            </div>
+            </motion.div>
 
-            <div className="read-btn">
-              <Link>Read More</Link>
-            </div>
+            <div className="read-btn">Read More</div>
           </div>
         </div>
       </div>

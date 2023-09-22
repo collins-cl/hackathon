@@ -6,21 +6,38 @@ import spons3 from "../../assets/SponsorsImages/spons3.png";
 import spons4 from "../../assets/SponsorsImages/spons4.png";
 import spons5 from "../../assets/SponsorsImages/spons5.png";
 import spons6 from "../../assets/SponsorsImages/Paybox.png";
+import star1 from "../../assets/FaqImages/star-1.png";
+import star from "../../assets/FaqImages/star.png";
+
 import { motion } from "framer-motion";
 
 const Sponsors = () => {
   return (
     <div className="sponsors">
       <div className="wrapper">
-        <div className="head">Partners and Sponsors</div>
-
-        <div className="info">
-          Getlinked Hackathon 1.0 is honored to have the following major
-          companies as its partners and sponsors
-        </div>
+        <motion.div
+          animate={{ y: 50, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.5 }}
+          className="head"
+        >
+          Partners and Sponsors
+        </motion.div>
 
         <motion.div
-          animate={{ opacity: 0, y: 10 }}
+          animate={{ y: 100, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ delay: 1 }}
+          className="info"
+        >
+          Getlinked Hackathon 1.0 is honored to have the following major
+          companies as its partners and sponsors
+        </motion.div>
+
+        <motion.div
+          animate={{ opacity: 0, y: 100 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{
@@ -30,6 +47,10 @@ const Sponsors = () => {
           }}
           className="section"
         >
+          
+          <img src={star} alt="" className="purple" />
+          <img src={star} alt="" className="white" />
+          <img src={star1} alt="" className="sec-white" />
           <div className="container">
             <div className="row">
               <div className="one">

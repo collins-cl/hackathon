@@ -15,17 +15,36 @@ const Faq = () => {
     <div className="faq">
       <div className="wrapper">
         <div className="details">
-          <div className="head">
+          <motion.div
+            animate={{ y: 150, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.5 }}
+            className="head"
+          >
             Frequently Asked
             <span> Question</span>
-          </div>
+            <img src={star} alt="" className="right" />
+          </motion.div>
 
-          <div className="paragraph">
+          <motion.div
+            animate={{ x: 150, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ delay: 1 }}
+            className="paragraph"
+          >
             We got answers to the questions that you might want to ask about
             getlinked Hackathon 1.0
-          </div>
+          </motion.div>
 
-          <div className="accordion">
+          <motion.div
+            animate={{ y: 150, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ delay: 1 }}
+            className="accordion"
+          >
             <Accordion elevation={0}>
               <AccordionSummary
                 expandIcon={
@@ -121,7 +140,7 @@ const Faq = () => {
                 deserunt deleniti vel, quas placeat neque sequi.
               </AccordionDetails>
             </Accordion>
-          </div>
+          </motion.div>
         </div>
 
         <div className="image">
@@ -129,6 +148,8 @@ const Faq = () => {
           <img src={_} alt="" className="two" />
           <img src={_} alt="" className="three" />
           <img src={star} alt="" className="star" />
+          <img src={star} alt="" className="right" />
+          <img src={stargray} alt="" className="left" />
           <motion.img
             animate={{ opacity: 0, scale: 0.3 }}
             whileInView={{ opacity: 1, scale: 1 }}

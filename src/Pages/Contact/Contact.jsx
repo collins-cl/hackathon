@@ -6,6 +6,7 @@ import axios from "axios";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Navbar from "../../Components/Navbar/Navbar";
+import { motion } from "framer-motion";
 
 const Contact = () => {
   const success = () =>
@@ -80,9 +81,21 @@ const Contact = () => {
       <div className="contact">
         <div className="wrapper">
           <div className="box1">
-            <div className="head">Get in touch</div>
+            <motion.div
+              initial={{ y: 50, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ delay: 1 }}
+              className="head"
+            >
+              Get in touch
+            </motion.div>
 
-            <div className="contact-us">
+            <motion.div
+              initial={{ y: 50, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ delay: 1.5 }}
+              className="contact-us"
+            >
               <div className="title">Contact information</div>
 
               <div className="location">
@@ -94,9 +107,14 @@ const Contact = () => {
               <div className="work-hours">
                 we are open from Monday-Friday 08:00am - 05:00pm
               </div>
-            </div>
+            </motion.div>
 
-            <div className="socials">
+            <motion.div
+              initial={{ y: 50, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ delay: 1.3 }}
+              className="socials"
+            >
               <p>Share us on</p>
 
               <div>
@@ -113,17 +131,34 @@ const Contact = () => {
                   <FaLinkedin className="icon" />
                 </a>
               </div>
-            </div>
+            </motion.div>
           </div>
 
           <div className="box2">
-            <div className="head">
+            <motion.div
+              initial={{ y: 50, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ delay: 1.1 }}
+              className="head"
+            >
               Questions or need assistance? <br /> Let us know about it!
-            </div>
+            </motion.div>
 
-            <p>Email us below to any question related to our event</p>
+            <motion.p
+              initial={{ y: 70, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ delay: 1 }}
+            >
+              Email us below to any question related to our event
+            </motion.p>
 
-            <form action="submit" onSubmit={handleSubmit}>
+            <motion.form
+              initial={{ y: 50, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ delay: 1.5 }}
+              action="submit"
+              onSubmit={handleSubmit}
+            >
               <div className="input">
                 <input
                   type="text"
@@ -157,8 +192,8 @@ const Contact = () => {
                 value={message}
                 onChange={handleChange}
               ></textarea>
-              <button type="submit">Submit</button>
-            </form>
+              <button type="submit" >Submit</button>
+            </motion.form>
           </div>
         </div>
 

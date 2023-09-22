@@ -3,6 +3,58 @@
 .privacy {
   padding: 5em 0;
   border-bottom: $borderBottom;
+  position: relative;
+
+  .purple {
+    position: absolute;
+    bottom: 20%;
+    margin-left: 6em;
+    width: 15px;
+  }
+
+  .sec-purple {
+    position: absolute;
+    right: 50%;
+    top: 15%;
+    width: 15px;
+  }
+
+  .third-purple{
+    position: absolute;
+    left: 60%;
+    top: 60%;
+    width: 15px;
+  }
+
+  .sec-purple {
+    position: absolute;
+    right: 50%;
+    top: 15%;
+    width: 15px;
+  }
+  
+  .white {
+    position: absolute;
+    right: 0;
+    margin-right: 7em;
+    bottom: 25%;
+    width: 20px;
+  }
+
+  .sec-white {
+    position: absolute;
+    right: 0;
+    margin-right: 20%;
+    top: 15%;
+    width: 15px;
+  }
+
+  .third-white{
+    position: absolute;
+    left: 30%;
+    width: 15px;
+    margin-top: -3em;
+  }
 
   .wrapper {
     max-width: 80vw;
@@ -80,14 +132,24 @@
         }
 
         .read-more {
-          padding: 7px 1em;
           background: $lineargradient;
           width: 8em;
-          text-align: center;
+          height: 40px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
           border-radius: 2px;
           margin: auto;
           margin-top: 2em;
-          font-size: 15px;
+          font-size: 14px;
+          cursor: pointer;
+
+          &:hover {
+            background: transparent;
+            border-width: 1px;
+            border-style: solid;
+            border-image: $hoverGradient;
+          }
         }
       }
     }
@@ -165,9 +227,9 @@
       .right {
         position: relative;
         margin-top: 7em;
-        
-        img{
-            width: 80%;
+
+        img {
+          width: 80%;
         }
 
         .lock {

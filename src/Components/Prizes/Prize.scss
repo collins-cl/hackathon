@@ -2,7 +2,6 @@
 
 .prize {
   padding: 7em 0;
-  border-bottom: $borderBottom;
 
   .box {
     width: 100%;
@@ -39,6 +38,35 @@
       align-items: center;
       justify-content: space-around;
 
+      .image {
+        position: relative;
+
+        .purple {
+          position: absolute;
+          right: 70%;
+          top: 0;
+          margin-top: -8em;
+          width: 15px;
+        }
+
+        .white {
+          position: absolute;
+          right: 70%;
+          bottom: 0;
+          margin-bottom: -2em;
+          width: 15px;
+        }
+
+        .sec-white {
+          position: absolute;
+          right: 0;
+          margin-right: -7em;
+          top: 20%;
+          margin-top: -2em;
+          width: 15px;
+        }
+      }
+
       .details {
         display: flex;
         flex-direction: column;
@@ -60,6 +88,15 @@
             border: 1px solid #d434fe;
             background: rgba(212, 52, 254, 0.12);
             padding: 10px;
+            position: relative;
+
+            .sec-white {
+              position: absolute;
+              width: 15px;
+              right: 0;
+              top: 0;
+              margin-top: -7em;
+            }
 
             p {
               width: 70%;
@@ -87,6 +124,14 @@
             padding: 10px 5px;
             border: 1px solid #903aff;
             background: rgba(144, 58, 255, 0.12);
+            position: relative;
+
+            .sec-white {
+              position: absolute;
+              width: 15px;
+              bottom: 0;
+              margin-bottom: -3em;
+            }
 
             p {
               width: 50%;
@@ -133,6 +178,23 @@
           margin-top: 2em;
           img {
             width: 100%;
+          }
+
+          .purple {
+            width: 10px;
+          }
+
+          .white {
+            width: 10px;
+          }
+
+          .sec-white {
+            position: absolute;
+            right: 0;
+            margin-right: 0;
+            top: 20%;
+            margin-top: -2em;
+            width: 10px;
           }
         }
 

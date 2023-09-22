@@ -5,10 +5,18 @@ import { Link as RegLink } from "react-router-dom";
 import { Link } from "react-scroll";
 import { FaLinkedin, FaInstagram, FaFacebookF } from "react-icons/fa";
 import { FaLocationDot, FaPhoneVolume, FaXTwitter } from "react-icons/fa6";
+import { motion } from "framer-motion";
+import stargray from "../../assets/FaqImages/stargray.png";
+import star1 from "../../assets/FaqImages/star-1.png";
+import star from "../../assets/FaqImages/star.png";
 
 const Footer = () => {
   return (
     <div className="footer">
+      <img src={star} alt="" className="purple" />
+      <img src={star1} alt="" className="white" />
+      <img src={stargray} alt="" className="third-white" />
+      <img src={star1} alt="" className="sec-white" />
       <div className="wrapper">
         <div className="container">
           <div className="container1">
@@ -45,34 +53,41 @@ const Footer = () => {
               <p>Follow us</p>
 
               <div>
-                <a
+                <motion.a
+                  whileHover={{ scale: 1.1 }}
                   href="http://www.instagram.com"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <FaInstagram className="icon" />
-                </a>
-                <a
+                </motion.a>
+
+                <motion.a
+                  whileHover={{ scale: 1.1 }}
                   href="http://www.x.com"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <FaXTwitter className="icon" />
-                </a>
-                <a
+                </motion.a>
+
+                <motion.a
+                  whileHover={{ scale: 1.1 }}
                   href="http://www.faecbook.com"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <FaFacebookF className="icon" />
-                </a>
-                <a
+                </motion.a>
+
+                <motion.a
+                  whileHover={{ scale: 1.1 }}
                   href="http://www.linkedln.come"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <FaLinkedin className="icon" />
-                </a>
+                </motion.a>
               </div>
             </div>
           </div>

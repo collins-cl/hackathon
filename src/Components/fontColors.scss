@@ -10,3 +10,12 @@ $primarycolor: #d434fe;
 $secondarycolor: #ff26b9;
 
 $borderBottom: 1px solid rgba(211, 211, 211, 0.107);
+
+$hoverGradient: linear-gradient(
+    270deg,
+    #903aff,
+    #d434fe 56.42%,
+    #ff26b9,
+    #fe34b9
+  )
+  1;

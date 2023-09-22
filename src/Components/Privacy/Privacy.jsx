@@ -3,24 +3,51 @@ import "../Privacy/Privacy.scss";
 import Logo from "../../assets/PrivacyImages/lock.png";
 import Lock from "../../assets/PrivacyImages/Vector.png";
 import { motion } from "framer-motion";
+import stargray from "../../assets/FaqImages/stargray.png";
+import star1 from "../../assets/FaqImages/star-1.png";
+import star from "../../assets/FaqImages/star.png";
 
 const Privacy = () => {
   return (
     <div className="privacy">
+      <img src={star} alt="" className="purple" />
+      <img src={star} alt="" className="sec-purple" />
+      <img src={star} alt="" className="third-purple" />
+      <img src={stargray} alt="" className="white" />
+      <img src={stargray} alt="" className="third-white" />
+      <img src={star1} alt="" className="sec-white" />
       <div className="wrapper">
         <div className="left">
-          <div className="head">
+          <motion.div
+            animate={{ y: 50, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.5 }}
+            className="head"
+          >
             Privacy Policy and <span>Terms</span>
-          </div>
+          </motion.div>
 
           <div className="update">Last updated on September 12, 2023</div>
 
-          <div className="info">
+          <motion.div
+            animate={{ y: 70, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ delay: 1 }}
+            className="info"
+          >
             Below are our privacy & policy, which outline a lot of goodies. it’s
             our aim to always take of our participant
-          </div>
+          </motion.div>
 
-          <div className="section">
+          <motion.div
+            animate={{ x: 100, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ delay: 1 }}
+            className="section"
+          >
             <div className="top">
               At getlinked tech Hackathon 1.0, we value your privacy and are
               committed to protecting your personal information. This Privacy
@@ -47,7 +74,7 @@ const Privacy = () => {
             </div>
 
             <div className="read-more">Read More</div>
-          </div>
+          </motion.div>
         </div>
 
         <div className="right">

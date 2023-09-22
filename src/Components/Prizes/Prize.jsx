@@ -5,6 +5,9 @@ import first from "../../assets/PrizeImage/gold_medal.png";
 import second from "../../assets/PrizeImage/silver_medal.png";
 import third from "../../assets/PrizeImage/bronze_medal.png";
 import { motion } from "framer-motion";
+import star1 from "../../assets/FaqImages/star-1.png";
+import star from "../../assets/FaqImages/star.png";
+import stargray from "../../assets/FaqImages/stargray.png";
 
 const Prize = () => {
   return (
@@ -12,15 +15,27 @@ const Prize = () => {
       <div className="box">
         <div className="div">
           <div className="title">
-            <div className="head">
+            <motion.div
+              animate={{ y: 50, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.5 }}
+              className="head"
+            >
               Prizes and <br />
               <span>Rewards</span>
-            </div>
+            </motion.div>
 
-            <div className="info">
+            <motion.div
+              animate={{ x: 100, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ delay: 1 }}
+              className="info"
+            >
               Highlight of the prizes or rewards for winners and for
               participants.
-            </div>
+            </motion.div>
           </div>
         </div>
 
@@ -39,25 +54,32 @@ const Prize = () => {
               width={400}
               alt=""
             />
+
+            <img src={star} alt="" className="purple" />
+            <img src={star1} alt="" className="white" />
+            <img src={star1} alt="" className="sec-white" />
           </div>
 
           <div className="details">
             <div className="ranks">
-              <div className="container">
+              <motion.div whileHover={{ scale: 1.1 }} className="container">
                 <img src={second} alt="" />
                 <p>2nd Runner</p>
                 <div>N300,000</div>
-              </div>
-              <div className="container2">
+              </motion.div>
+
+              <motion.div whileHover={{ scale: 1.1 }} className="container2">
                 <img src={first} alt="" />
                 <p>1st Runner</p>
                 <div>N400,000</div>
-              </div>
-              <div className="container">
+                <img src={stargray} alt="" className="sec-white" />
+              </motion.div>
+              <motion.div whileHover={{ scale: 1.1 }} className="container">
                 <img src={third} alt="" />
                 <p>3rd Runner</p>
                 <div>N150,000</div>
-              </div>
+                <img src={star1} alt="" className="sec-white" />
+              </motion.div>
             </div>
           </div>
         </div>

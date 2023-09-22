@@ -1,3 +1,5 @@
+@import "../fontColors.scss";
+
 .navbar {
   max-width: 85vw;
   margin: auto;
@@ -40,6 +42,15 @@
               #ff26b9 99.99%,
               #fe34b9 100%
             );
+            transition: all 0.3s ease-in;
+
+            &:hover {
+              background: transparent;
+              border-width: 1px;
+              border-style: solid;
+            
+              border-image: $hoverGradient;
+            }
           }
         }
 
@@ -88,7 +99,7 @@
         padding: 8em 4em;
         z-index: 1;
         display: block;
-        animation: dropdown .3s ease;
+        animation: dropdown 0.3s ease;
 
         .container {
           width: 100%;
@@ -161,14 +172,12 @@
         cursor: pointer;
         display: block;
       }
-
-     
     }
   }
 }
 
 @keyframes dropdown {
-    0% {
-      transform: translateX(-50px);
-    }
+  0% {
+    transform: translateX(-50px);
   }
+}

@@ -152,6 +152,15 @@
           margin-left: 7em;
         }
 
+        .middle {
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          margin-bottom: -1em;
+          margin-right: 2em;
+          width: 15px;
+        }
+
         .bottom {
           position: absolute;
           right: 0;
@@ -191,13 +200,22 @@
 
         .read-btn {
           margin-top: 2em;
-          a {
-            font-size: 14px;
-            padding: 8px 2em;
-            border-radius: 3px;
-            outline: none;
-            border: none;
-            background: $lineargradient;
+          font-size: 14px;
+          width: 8em;
+          height: 40px;
+          border-radius: 3px;
+          outline: none;
+          border: none;
+          background: $lineargradient;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          &:hover {
+            background: transparent;
+            border-width: 1px;
+            border-style: solid;
+            border-image: $hoverGradient;
           }
         }
       }

@@ -100,6 +100,26 @@
             font-size: 13px;
           }
 
+          .category {
+            .container {
+              .category_size {
+                position: absolute;
+                width: 100%;
+                background: #150e28;
+                padding: 10px;
+                z-index: 1;
+                margin-top: 5px;
+
+                .content {
+                  padding: 5px;
+                  width: 100%;
+                  cursor: pointer;
+                  font-size: 14px;
+                }
+              }
+            }
+          }
+
           .container {
             width: 100%;
             position: relative;
@@ -164,6 +184,14 @@
           border: none;
           cursor: pointer;
           background: $lineargradient;
+
+          &:hover {
+            background: transparent;
+            border-width: 1px;
+            border-style: solid;
+
+            border-image: $hoverGradient;
+          }
         }
       }
     }
@@ -264,6 +292,23 @@
                     white-space: nowrap;
                     overflow: hidden;
                     padding: 5px;
+                  }
+                }
+
+                .group_size {
+                  position: absolute;
+                  width: 100%;
+                  background: red;
+                  padding: 10px;
+                  z-index: 1;
+                right: 0;
+                  margin-top: 5px;
+
+                  .content {
+                    padding: 5px;
+                    width: 100%;
+                    cursor: pointer;
+                    font-size: 14px;
                   }
                 }
               }

@@ -2,6 +2,39 @@
 
 .footer {
   padding: 4em 0 1em 0;
+  position: relative;
+
+  .purple,
+  .sec-purple,
+  .third-purple,
+  .white,
+  .sec-white,
+  .third-white {
+    position: absolute;
+  }
+
+  .purple{
+    bottom: 0;
+    left: 50%;
+    margin-bottom: 3em;
+    width: 15px;
+  }
+
+  .white{
+    margin-left: 3em;
+    width: 15px;
+  }
+
+  .sec-white{
+    right: 10%;
+    bottom: 30%;
+    width: 15px;
+  }
+
+  .third-white{
+    right: 30%;
+    width: 15px;
+  }
   .wrapper {
     width: 80vw;
     margin: auto;
@@ -112,7 +145,7 @@
           font-size: 12px;
           width: 80%;
 
-          .loc{
+          .loc {
             font-size: 18px;
           }
         }

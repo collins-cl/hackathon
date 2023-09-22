@@ -134,6 +134,13 @@
           border: none;
           cursor: pointer;
           border-radius: 4px;
+
+          &:hover {
+            background: transparent;
+            border-width: 1px;
+            border-style: solid;
+            border-image: $hoverGradient;
+          }
         }
       }
     }

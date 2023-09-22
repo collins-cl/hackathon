@@ -182,7 +182,7 @@ const Register = () => {
                     </div>
 
                     {opencategory && (
-                      <div className="group_size">
+                      <div className="category_size">
                         {categoryOptions.map((item, id) => (
                           <div
                             key={id}
@@ -201,7 +201,7 @@ const Register = () => {
                   <label htmlFor="group_size">Group Size</label>
                   <div className="container">
                     <div className="box" onClick={() => setOpensize(true)}>
-                      {group_size ? group_size : <p>Select your group size</p>}
+                      {group_size ? group_size : <p>Select</p>}
                       <p>
                         <FaAngleDown className="icon" />
                       </p>
