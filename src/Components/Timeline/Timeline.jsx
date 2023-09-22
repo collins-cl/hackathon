@@ -9,20 +9,20 @@ const Timeline = () => {
     <div className="timeline">
       <div className="wrapper">
         <motion.div
-          animate={{ y: 50, opacity: 0 }}
-          whileInView={{ y: 0, opacity: 1 }}
-          viewport={{ once: true }}
-          transition={{ delay: 0.5 }}
+          // animate={{ y: 50, opacity: 0 }}
+          // whileInView={{ y: 0, opacity: 1 }}
+          // viewport={{ once: true }}
+          // transition={{ delay: 0.5 }}
           className="head"
         >
           Timeline
         </motion.div>
 
         <motion.div
-          animate={{ y: 100, opacity: 0 }}
-          whileInView={{ y: 0, opacity: 1 }}
-          viewport={{ once: true }}
-          transition={{ delay: 1 }}
+          // animate={{ y: 100, opacity: 0 }}
+          // whileInView={{ y: 0, opacity: 1 }}
+          // viewport={{ once: true }}
+          // transition={{ delay: 1 }}
           className="info"
         >
           Here is the breakdown of the time we anticipate using for the upcoming
@@ -34,15 +34,15 @@ const Timeline = () => {
             <div className="right-container">
               <h4>Hackathon Announcement</h4>
               <motion.p
-                animate={{ x: 100, opacity: 0 }}
-                whileInView={{ x: 0, opacity: 1 }}
-                viewport={{ once: true }}
-                transition={{ delay: 1.2 }}
+                // animate={{ x: 100, opacity: 0 }}
+                // whileInView={{ x: 0, opacity: 1 }}
+                // viewport={{ once: true }}
+                // transition={{ delay: 1.2 }}
               >
                 The getlinked tech hackathon 1.0 is formally announced to the
                 general public and teams begin to get ready to register
               </motion.p>
-              <img src={star} alt="" className="right" />
+              {/* <img src={star} alt="" className="right" /> */}
             </div>
 
             <div className="one">1</div>
@@ -58,10 +58,10 @@ const Timeline = () => {
             <div className="left-container">
               <h4>Teams Registration begins</h4>
               <motion.p
-                animate={{ x: 100, opacity: 0 }}
-                whileInView={{ x: 0, opacity: 1 }}
-                viewport={{ once: true }}
-                transition={{ delay: 1.4 }}
+                // animate={{ x: 100, opacity: 0 }}
+                // whileInView={{ x: 0, opacity: 1 }}
+                // viewport={{ once: true }}
+                // transition={{ delay: 1.4 }}
               >
                 Interested teams can now show their interest in the getlinked
                 tech hackathon 1.0 2023 by proceeding to register
@@ -73,10 +73,10 @@ const Timeline = () => {
             <div className="right-container">
               <h4>Teams Registration ends</h4>
               <motion.p
-                animate={{ x: 100, opacity: 0 }}
-                whileInView={{ x: 0, opacity: 1 }}
-                viewport={{ once: true }}
-                transition={{ delay: 1.6 }}
+                // animate={{ x: 100, opacity: 0 }}
+                // whileInView={{ x: 0, opacity: 1 }}
+                // viewport={{ once: true }}
+                // transition={{ delay: 1.6 }}
               >
                 Interested Participants are no longer Allowed to register
               </motion.p>
@@ -85,7 +85,7 @@ const Timeline = () => {
             <div className="one">3</div>
 
             <div className="date">November 18, 2023</div>
-            <img src={star1} alt="" className="left" />
+              {/* <img src={star1} alt="" className="left" /> */}
           </div>
 
           <div className="second fourth">
@@ -96,10 +96,10 @@ const Timeline = () => {
             <div className="left-container">
               <h4>Announcement of the accepted teams</h4>
               <motion.p
-                animate={{ x: 100, opacity: 0 }}
-                whileInView={{ x: 0, opacity: 1 }}
-                viewport={{ once: true }}
-                transition={{ delay: 1.8 }}
+                // animate={{ x: 100, opacity: 0 }}
+                // whileInView={{ x: 0, opacity: 1 }}
+                // viewport={{ once: true }}
+                // transition={{ delay: 1.8 }}
               >
                 All teams whom idea has been accepted into getlinked tech
                 hackathon 1.0 2023 are formally announced
@@ -111,10 +111,10 @@ const Timeline = () => {
             <div className="right-container">
               <h4>Getlinked Hackathon 1.0 Offically Begins</h4>
               <motion.p
-                animate={{ x: 100, opacity: 0 }}
-                whileInView={{ x: 0, opacity: 1 }}
-                viewport={{ once: true }}
-                transition={{ delay: 2 }}
+                // animate={{ x: 100, opacity: 0 }}
+                // whileInView={{ x: 0, opacity: 1 }}
+                // viewport={{ once: true }}
+                // transition={{ delay: 2 }}
               >
                 Accepted teams can now proceed to build their ground breaking
                 skill driven solutions
@@ -134,10 +134,10 @@ const Timeline = () => {
             <div className="left-container">
               <h4>Demo Day</h4>
               <motion.p
-                animate={{ x: 100, opacity: 0 }}
-                whileInView={{ x: 0, opacity: 1 }}
-                viewport={{ once: true }}
-                transition={{ delay: 2.2 }}
+                // animate={{ x: 100, opacity: 0 }}
+                // whileInView={{ x: 0, opacity: 1 }}
+                // viewport={{ once: true }}
+                // transition={{ delay: 2.2 }}
               >
                 Teams get the opportunity to pitch their projects to judges. The
                 winner of the hackathon will also be announced on this day
