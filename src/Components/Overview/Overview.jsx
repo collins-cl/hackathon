@@ -152,7 +152,7 @@ const Overview = () => {
             </motion.div>
 
             <motion.div
-              animate={{ x: 50, opacity: 0 }}
+              animate={{ x: -50, opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
               viewport={{ once: true }}
               transition={{ delay: 0.8 }}
