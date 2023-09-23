@@ -19,19 +19,24 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 
-    p {
-      font-size: 2em;
-      font-style: italic;
-      font-weight: 700;
-      position: relative;
-
+    .pink-stripe {
+      width: 500px;
       &::after {
         content: url("../../assets/heroimages/curved.png");
         position: absolute;
         right: 0;
         bottom: 0;
-        margin-bottom: -0.8em;
+        transform: scale(0.7);
+        margin-bottom: -1.3em;
+      }
+      p {
+        font-size: 1.5em;
+        font-style: italic;
+        font-weight: 700;
+        position: relative;
+        text-align: center;
       }
     }
   }
@@ -109,6 +114,21 @@
             border-image: $hoverGradient;
           }
         }
+
+        .registered {
+          background: transparent;
+          cursor: pointer;
+          border-width: 1px;
+          border-style: solid;
+          border-image: $hoverGradient;
+          font-size: 14px;
+          padding: 8px 2em;
+          border-radius: 3px;
+          width: 10em;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
       }
     }
 
@@ -152,11 +172,12 @@
       flex-direction: column-reverse;
       gap: 2em;
 
-      p {
-        font-size: 1.2em;
-
+      .pink-stripe {
+        width: 100%;
         &::after {
-          margin-bottom: -1.4em;
+          margin-right: 2em;
+
+          margin-bottom: 2em;
         }
       }
 
@@ -177,7 +198,7 @@
       justify-content: center;
       align-items: center;
       width: 100%;
-      margin-top: 2em;
+      margin-top: 0%;
 
       .box1 {
         width: 100%;

@@ -8,6 +8,12 @@ import axios from "axios";
 import RegSuccess from "../../Components/RegSuccess/RegSuccess";
 import Navbar from "../../Components/Navbar/Navbar";
 import { categoryOptions, groupSizeOptions } from "../../Components/DummyData";
+import left from "../../assets/ContactFlares/leftflare.png";
+import right from "../../assets/ContactFlares/rightflare.png";
+import star from "../../assets/OverviewImages/star.png";
+import white from "../../assets/OverviewImages/star-1.png";
+import gray from "../../assets/OverviewImages/stargray.png";
+import { motion } from "framer-motion";
 
 const Register = () => {
   const initialValues = {
@@ -78,6 +84,7 @@ const Register = () => {
       );
       if (response.status === 201) {
         setModal(true);
+        localStorage.setItem("registered", true);
       }
     } catch (error) {
       console.error(error);
@@ -99,6 +106,46 @@ const Register = () => {
     <>
       <Navbar />
       <div className="register">
+        <img src={left} alt="" className="left" />
+
+        <img src={right} alt="" className="right" />
+
+        <motion.img
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ repeat: Infinity, duration: 2, delay: 0.6 }}
+          src={star}
+          alt=""
+          className="star"
+        />
+
+        <motion.img
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ repeat: Infinity, duration: 2, delay: 0.7 }}
+          src={star}
+          alt=""
+          className="sec-star"
+        />
+
+        <motion.img
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ repeat: Infinity, duration: 2, delay: 0.8 }}
+          src={white}
+          alt=""
+          className="white"
+        />
+
+        <motion.img
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ repeat: Infinity, duration: 2, delay: 0.9 }}
+          src={gray}
+          alt=""
+          className="gray"
+        />
+
         <div className="wrapper">
           <div className="box1">
             <img src={Logo} alt="" />

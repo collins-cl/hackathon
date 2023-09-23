@@ -2,6 +2,50 @@
 
 .contact {
   padding: 5em 0;
+  position: relative;
+
+  .right {
+    position: absolute;
+    left: 0;
+    width: 500px;
+    top: 0;
+    z-index: -1;
+  }
+
+  .left {
+    position: absolute;
+    right: 0;
+    width: 400px;
+    bottom: 0;
+    z-index: -1;
+  }
+
+  .star {
+    width: 15px;
+    position: absolute;
+    left: 18%;
+  }
+
+  .sec-star {
+    position: absolute;
+    bottom: 30%;
+    left: 45%;
+    width: 15px;
+  }
+
+  .white {
+    position: absolute;
+    bottom: 10%;
+    right: 10%;
+    width: 15px;
+  }
+
+  .gray {
+    width: 15px;
+    top: 5%;
+    right: 20%;
+    position: absolute;
+  }
 
   .wrapper {
     width: 75vw;
@@ -147,9 +191,49 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .contact {
     padding: 2em 0;
+
+    .right {
+      position: absolute;
+      left: 0;
+      width: 100%;
+      top: 0;
+      z-index: -1;
+    }
+
+    .left {
+    
+      display: none;
+    }
+
+    .star {
+      width: 15px;
+      position: absolute;
+      left: 18%;
+    }
+
+    .sec-star {
+      position: absolute;
+      bottom: 30%;
+      left: 45%;
+      width: 15px;
+    }
+
+    .white {
+      position: absolute;
+      bottom: 10%;
+      right: 10%;
+      width: 15px;
+    }
+
+    .gray {
+      width: 15px;
+      top: 5%;
+      right: 20%;
+      position: absolute;
+    }
 
     .wrapper {
       width: 100%;

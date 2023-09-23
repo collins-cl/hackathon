@@ -22,7 +22,7 @@ const Timeline = () => {
           animate={{ y: 100, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
           viewport={{ once: true }}
-          transition={{ delay: 1 }}
+          transition={{ delay: .7 }}
           className="info"
         >
           Here is the breakdown of the time we anticipate using for the upcoming
@@ -37,7 +37,7 @@ const Timeline = () => {
                 animate={{ x: -50, opacity: 0 }}
                 whileInView={{ x: 0, opacity: 1 }}
                 viewport={{ once: true }}
-                transition={{ delay: 1.2 }}
+                transition={{ delay: .8 }}
               >
                 The getlinked tech hackathon 1.0 is formally announced to the
                 general public and teams begin to get ready to register
@@ -61,7 +61,7 @@ const Timeline = () => {
                 animate={{ x: -50, opacity: 0 }}
                 whileInView={{ x: 0, opacity: 1 }}
                 viewport={{ once: true }}
-                transition={{ delay: 1.4 }}
+                transition={{ delay: .9 }}
               >
                 Interested teams can now show their interest in the getlinked
                 tech hackathon 1.0 2023 by proceeding to register
@@ -76,7 +76,7 @@ const Timeline = () => {
                 animate={{ x: -50, opacity: 0 }}
                 whileInView={{ x: 0, opacity: 1 }}
                 viewport={{ once: true }}
-                transition={{ delay: 1.6 }}
+                transition={{ delay: 1 }}
               >
                 Interested Participants are no longer Allowed to register
               </motion.p>
@@ -99,7 +99,7 @@ const Timeline = () => {
                 animate={{ x: -50, opacity: 0 }}
                 whileInView={{ x: 0, opacity: 1 }}
                 viewport={{ once: true }}
-                transition={{ delay: 1.8 }}
+                transition={{ delay: 1.1 }}
               >
                 All teams whom idea has been accepted into getlinked tech
                 hackathon 1.0 2023 are formally announced
@@ -114,7 +114,7 @@ const Timeline = () => {
                 animate={{ x: -50, opacity: 0 }}
                 whileInView={{ x: 0, opacity: 1 }}
                 viewport={{ once: true }}
-                transition={{ delay: 2 }}
+                transition={{ delay: 1.2 }}
               >
                 Accepted teams can now proceed to build their ground breaking
                 skill driven solutions
@@ -137,7 +137,7 @@ const Timeline = () => {
                 animate={{ x: -50, opacity: 0 }}
                 whileInView={{ x: 0, opacity: 1 }}
                 viewport={{ once: true }}
-                transition={{ delay: 2.2 }}
+                transition={{ delay: 1.3 }}
               >
                 Teams get the opportunity to pitch their projects to judges. The
                 winner of the hackathon will also be announced on this day

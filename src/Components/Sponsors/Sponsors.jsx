@@ -34,7 +34,7 @@ const Sponsors = () => {
           animate={{ y: 100, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
           viewport={{ once: true }}
-          transition={{ delay: 1 }}
+          transition={{ delay: .7 }}
           className="info"
         >
           Getlinked Hackathon 1.0 is honored to have the following major

@@ -43,7 +43,7 @@ const Faq = () => {
             animate={{ x: -50, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
             viewport={{ once: true }}
-            transition={{ delay: 1 }}
+            transition={{ delay: .7 }}
             className="paragraph"
           >
             We got answers to the questions that you might want to ask about
@@ -54,7 +54,7 @@ const Faq = () => {
             animate={{ y: 150, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             viewport={{ once: true }}
-            transition={{ delay: 1 }}
+            transition={{ delay: .8 }}
             className="accordion"
           >
             <Accordion elevation={0}>

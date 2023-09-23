@@ -60,7 +60,7 @@ const Overview = () => {
               initial={{ y: 100, opacity: 0 }}
               whileInView={{ y: 0, opacity: 1 }}
               viewport={{ once: true }}
-              transition={{ delay: 1 }}
+              transition={{ delay: .8 }}
               className="info"
             >
               Our tech hackathon is a melting pot of visionaries, and its
@@ -109,7 +109,7 @@ const Overview = () => {
               <motion.img
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
-                transition={{ repeat: Infinity, duration: 2, delay: 0.9 }}
+                transition={{ repeat: Infinity, duration: 2, delay: 0.7 }}
                 src={stargray}
                 className="top"
                 alt=""
@@ -117,7 +117,7 @@ const Overview = () => {
               <motion.img
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
-                transition={{ repeat: Infinity, duration: 2, delay: 1 }}
+                transition={{ repeat: Infinity, duration: 2, delay: .8 }}
                 src={starwhite}
                 className="bottom"
                 alt=""

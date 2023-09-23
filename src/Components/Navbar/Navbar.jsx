@@ -41,7 +41,11 @@ const Navbar = () => {
             </ul>
 
             <div className="reg-btn">
-              <RegLink to="/register">Register</RegLink>
+              {localStorage.getItem("registered", true) ? (
+                <div className="registered">Registered</div>
+              ) : (
+                <RegLink to="/register">Register</RegLink>
+              )}
             </div>
 
             <div className="hamburger-close-menu" onClick={closeHmaburger}>

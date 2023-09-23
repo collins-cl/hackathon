@@ -18,9 +18,24 @@
     border-radius: 5px;
     border: 1px solid #d434fe;
     background: rgba(255, 255, 255, 0.01);
-    margin-top: 5vh;
+    margin-top: 10vh;
     text-align: center;
     padding: 2em;
+    position: relative;
+
+    .star {
+      position: absolute;
+      width: 15px;
+      right: 5%;
+      bottom: 2%;
+    }
+
+    .sec-star {
+      position: absolute;
+      left: 5%;
+      top: 5%;
+      width: 15px;
+    }
 
     .congrats {
       font-size: 1.6em;

@@ -55,7 +55,9 @@ const Hero = () => {
           />
         </div>
 
-        <p>{text.slice(0, currentIndex)}</p>
+        <div className="pink-stripe">
+          <p>{text.slice(0, currentIndex)}</p>
+        </div>
       </div>
 
       <div className="container">
@@ -77,7 +79,11 @@ const Hero = () => {
           </div>
 
           <div className="reg-btn">
-            <Link to="/register">Register</Link>
+            {localStorage.getItem("registered", true) ? (
+              <div className="registered">Registered</div>
+            ) : (
+              <RegLink to="/register">Register</RegLink>
+            )}
           </div>
 
           <Timer />

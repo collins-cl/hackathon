@@ -7,6 +7,11 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Navbar from "../../Components/Navbar/Navbar";
 import { motion } from "framer-motion";
+import right from "../../assets/ContactFlares/right.png";
+import left from "../../assets/ContactFlares/left.png";
+import star from "../../assets/OverviewImages/star.png";
+import star1 from "../../assets/OverviewImages/star-1.png";
+import stargray from "../../assets/OverviewImages/stargray.png";
 
 const Contact = () => {
   const success = () =>
@@ -79,6 +84,45 @@ const Contact = () => {
     <>
       <Navbar />
       <div className="contact">
+        <img src={right} alt="" className="right" />
+        <img src={left} alt="" className="left" />
+
+        <motion.img
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ repeat: Infinity, duration: 2, delay: 0.5 }}
+          src={star}
+          alt=""
+          className="star"
+        />
+
+        <motion.img
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ repeat: Infinity, duration: 2, delay: 0.6 }}
+          src={star}
+          alt=""
+          className="sec-star"
+        />
+
+        <motion.img
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ repeat: Infinity, duration: 2, delay: 0.7 }}
+          src={star1}
+          alt=""
+          className="white"
+        />
+
+        <motion.img
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ repeat: Infinity, duration: 2, delay: 0.8 }}
+          src={stargray}
+          alt=""
+          className="gray"
+        />
+
         <div className="wrapper">
           <div className="box1">
             <motion.div
@@ -192,7 +236,7 @@ const Contact = () => {
                 value={message}
                 onChange={handleChange}
               ></textarea>
-              <button type="submit" >Submit</button>
+              <button type="submit">Submit</button>
             </motion.form>
           </div>
         </div>
