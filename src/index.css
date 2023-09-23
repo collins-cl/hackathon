@@ -16,6 +16,8 @@
   color: white;
 }
 
+html{scroll-behavior: smooth;}
+
 body {
   font-family: "Montserrat";
   background: #150e28;

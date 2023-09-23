@@ -1,0 +1,25 @@
+@import "../../Components/fontColors.scss";
+.body {
+  position: relative;
+  .up {
+    position: fixed;
+    right: 5%;
+    bottom: 10%;
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+    background: $primarycolor;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+
+    &:hover {
+      background: transparent;
+      border: 1px solid $primarycolor;
+      .icon {
+        fill: $primarycolor;
+      }
+    }
+  }
+}
