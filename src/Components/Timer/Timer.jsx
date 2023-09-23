@@ -4,7 +4,7 @@ import Star1 from "../../assets/heroimages/star-1.png";
 
 const Timer = () => {
   const initialCountdown =
-    parseInt(localStorage.getItem("countdown")) || 120 * 60 * 60;
+    parseInt(localStorage.getItem("countdown")) || 80 * 60 * 60;
   const [countdown, setCountdown] = useState(initialCountdown);
 
   useEffect(() => {
@@ -18,7 +18,7 @@ const Timer = () => {
     return () => clearInterval(interval);
   }, [countdown]);
 
-  const hours = Math.floor((countdown % (120 * 60 * 60)) / (60 * 60));
+  const hours = Math.floor((countdown % (80 * 60 * 60)) / (60 * 60));
   const minutes = Math.floor((countdown % (60 * 60)) / 60);
   const seconds = countdown % 60;
 
