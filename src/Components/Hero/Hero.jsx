@@ -7,7 +7,7 @@ import Fire from "../../assets/heroimages/fire.png";
 import Light from "../../assets/heroimages/lightbulb.png";
 import Dude from "../../assets/heroimages/man.png";
 import World from "../../assets/heroimages/world.png";
-import { Link as RegLink } from "react-router-dom";
+import {Link as RegLink } from "react-router-dom";
 import Timer from "../Timer/Timer";
 import blur from "../../assets/spotlight.svg";
 

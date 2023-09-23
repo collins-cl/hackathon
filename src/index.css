@@ -1,10 +1,10 @@
 @font-face {
-  font-family: "Poppins";
-  src: url("./Fonts/Poppins/Poppins-Regular.ttf");
+  font-family: "Montserrat";
+  src: url("./Fonts/Montserrat/static/Montserrat-Medium.ttf");
 }
 @font-face {
   font-family: "Poppins-B";
-  src: url("./Fonts/Poppins/Poppins-ExtraBold.ttf");
+  src: url("./Fonts/Montserrat/static/Montserrat-ExtraBold.ttf");
 }
 
 * {
@@ -17,8 +17,9 @@
 }
 
 body {
-  font-family: "Poppins";
+  font-family: "Montserrat";
   background: #150e28;
+  font-weight: 500;
 }
 
 body::-webkit-scrollbar {
