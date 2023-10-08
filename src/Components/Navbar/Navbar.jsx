@@ -3,10 +3,11 @@ import "../Navbar/Navbar.scss";
 import Logo from "../../assets/getlinked.png";
 import Hamburger from "../../assets/Vector.png";
 import { Link } from "react-scroll";
-import { Link as RegLink } from "react-router-dom";
+import { Link as RegLink, useLocation } from "react-router-dom";
 import { FaTimes } from "react-icons/fa";
 
 const Navbar = () => {
+  const location = useLocation();
   const [open, setOpen] = useState(false);
 
   const openHamburger = () => setOpen(true);
@@ -26,15 +27,19 @@ const Navbar = () => {
         <div className={open ? "section2-inactive" : "section2"}>
           <div className="container">
             <ul>
-              <Link to="timeline" smooth={true} onClick={closeHmaburger}>
-                Timeline
-              </Link>
-              <Link to="overview" smooth={true} onClick={closeHmaburger}>
-                Overview
-              </Link>
-              <Link to="faq" smooth={true} onClick={closeHmaburger}>
-                FAQs
-              </Link>
+              {location.pathname === "/contact" ? null : (
+                <Link to="overview" smooth={true} onClick={closeHmaburger}>
+                  About
+                </Link>
+              )}
+              <RegLink to="/createtag" onClick={closeHmaburger}>
+                Create Tag
+              </RegLink>
+              {location.pathname === "/contact" ? null : (
+                <Link to="faq" smooth={true} onClick={closeHmaburger}>
+                  FAQs
+                </Link>
+              )}
               <RegLink to="/contact" onClick={closeHmaburger}>
                 Contact
               </RegLink>

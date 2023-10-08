@@ -1,7 +1,14 @@
 @import "../fontColors.scss";
 
 .overview {
-  margin: 1em auto;
+  margin: 3em auto;
+  padding: 3em 0 0 0;
+
+  .intro {
+    text-align: center;
+    font-size: 2.2em;
+    font-weight: bold;
+  }
 
   .introduction {
     border-bottom: 1px solid rgba(211, 211, 211, 0.107);
@@ -12,7 +19,7 @@
       align-items: center;
       justify-content: space-between;
       gap: 8em;
-      padding: 5em 0;
+      padding: 2em 0 5em 0;
 
       .img {
         position: relative;
@@ -42,7 +49,7 @@
         width: 100%;
         .head {
           font-weight: bold;
-          font-size: 1.4em;
+          font-size: 1.8em;
           width: 80%;
           letter-spacing: 1px;
           position: relative;
@@ -99,15 +106,12 @@
       .details {
         width: 60%;
         .head {
-          width: 40%;
-          font-size: 1.4em;
+          width: 100%;
+          font-size: 1.8em;
           font-weight: bold;
           line-height: 1.4;
           letter-spacing: 1px;
-
-          span {
-            color: $primarycolor;
-          }
+          color: $primarycolor;
         }
 
         .info {
@@ -115,6 +119,7 @@
           position: relative;
           margin-top: 2em;
           width: 90%;
+          word-spacing: 5px;
 
           .top {
             position: absolute;
@@ -195,8 +200,8 @@
 
       .details {
         .head {
-          width: 40%;
-          font-size: 1.4em;
+          width: 70%;
+          font-size: 1.8em;
           font-weight: bold;
 
           span {
@@ -209,21 +214,19 @@
           display: flex;
           flex-direction: column;
           gap: 1.5em;
+          font-size: 12px;
+          line-height: 1.4;
 
-          div {
-            font-size: 12px;
-
-            span {
-              color: $secondarycolor;
-              font-weight: 600;
-            }
+          span {
+            color: $secondarycolor;
+            font-weight: 600;
           }
         }
 
         .read-btn {
           margin-top: 2em;
           font-size: 14px;
-          width: 8em;
+          width: 80%;
           height: 40px;
           border-radius: 3px;
           outline: none;
@@ -232,6 +235,7 @@
           display: flex;
           justify-content: center;
           align-items: center;
+          cursor: pointer;
 
           &:hover {
             background: transparent;
@@ -247,12 +251,18 @@
 
 @media screen and (max-width: 768px) {
   .overview {
-    margin: 1em auto;
+    margin: 5em auto;
+
+    .intro {
+      text-align: center;
+      font-size: 1.5em;
+      font-weight: bold;
+    }
 
     .introduction {
       border-bottom: 1px solid rgba(211, 211, 211, 0.107);
       .wrapper {
-        width: 80vw;
+        width: 95vw;
         margin: auto;
         flex-direction: column;
         gap: 8em;
@@ -266,7 +276,7 @@
           }
 
           .left {
-            margin-left: 3em;
+            margin-left: 1em;
             margin-top: -2em;
           }
 
@@ -282,10 +292,11 @@
           text-align: center;
           .head {
             width: 100%;
+            font-size: 1.5em;
             p {
               position: absolute;
               right: 0;
-              margin-right: -1em;
+              margin-right: 2em;
               top: 0;
               margin-top: 1em;
 
@@ -318,6 +329,7 @@
       .wrapper {
         display: flex;
         flex-direction: column-reverse;
+        max-width: 95vw;
 
         .details {
           width: 100%;
@@ -328,8 +340,9 @@
           align-items: center;
 
           .head {
-            width: 70%;
+            width: 100%;
             margin-top: 1em;
+            font-size: 1.5em;
           }
 
           .info {
@@ -354,7 +367,7 @@
         }
 
         .girl {
-          width: 100%;
+          width: 70%;
           img {
             width: 110%;
           }
@@ -376,7 +389,7 @@
         justify-content: center;
         align-items: center;
         gap: 3em;
-        max-width: 80vw;
+        max-width: 95vw;
         margin: auto;
         padding: 5em 0;
         text-align: center;
@@ -396,7 +409,9 @@
 
         .details {
           .head {
-            width: 100%;
+            width: 80%;
+            margin: auto;
+            font-size: 1.3em;
           }
 
           .info {
@@ -416,6 +431,7 @@
           .read-btn {
             margin: auto;
             margin-top: 2em;
+            width: 100%;
           }
         }
       }
@@ -427,7 +443,7 @@
   .overview {
     .introduction {
       .wrapper {
-        width: 90vw;
+        width: 85vw;
         gap: 5em;
 
         .img {
@@ -450,7 +466,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        max-width: 90vw;
+        max-width: 85vw;
         margin: auto;
         padding: 3em 0;
 
@@ -477,13 +493,13 @@
       .wrapper {
         display: flex;
         align-items: flex-start;
-        gap: 4em;
-        max-width: 90vw;
+        gap: 2em;
+        max-width: 85vw;
 
         .image {
           position: relative;
           margin-top: 5em;
-
+          width: 100%;
           .top {
             position: absolute;
             top: 0;
@@ -494,13 +510,14 @@
           }
 
           img {
-            width: 120%;
+            width: 80%;
           }
         }
 
         .details {
+          width: 100%;
           .head {
-            width: 40%;
+            width: 70%;
           }
         }
       }

@@ -9,7 +9,6 @@ import star1 from "../../assets/FaqImages/star-1.png";
 import star from "../../assets/FaqImages/star.png";
 import stargray from "../../assets/FaqImages/stargray.png";
 import { motion } from "framer-motion";
-import blur from "../../assets/spotlight.png";
 import halfblur from "../../assets/halfspot.png";
 
 const Faq = () => {
@@ -43,18 +42,18 @@ const Faq = () => {
             animate={{ x: -50, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
             viewport={{ once: true }}
-            transition={{ delay: .7 }}
+            transition={{ delay: 0.7 }}
             className="paragraph"
           >
             We got answers to the questions that you might want to ask about
-            getlinked Hackathon 1.0
+            Anonyms
           </motion.div>
 
           <motion.div
             animate={{ y: 150, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             viewport={{ once: true }}
-            transition={{ delay: .8 }}
+            transition={{ delay: 0.8 }}
             className="accordion"
           >
             <Accordion elevation={0}>
@@ -65,11 +64,12 @@ const Faq = () => {
                 aria-controls="panel1a-content"
                 id="panel1a-header"
               >
-                <p>Can I work on a project I started before the hackathon?</p>
+                <p>Is our website secure?</p>
               </AccordionSummary>
               <AccordionDetails id="content">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
-                deserunt deleniti vel, quas placeat neque sequi.
+                Indeed, our platform is more secure than ever before. We are
+                relentlessly enhancing the user experience to amplify the
+                enjoyment of the game. Your safety is paramount to us.
               </AccordionDetails>
             </Accordion>
 
@@ -81,11 +81,13 @@ const Faq = () => {
                 aria-controls="panel1a-content"
                 id="panel1a-header"
               >
-                <p>What happens if I need help during the hackathon?</p>
+                <p>Curious About the Message Sender?</p>
               </AccordionSummary>
               <AccordionDetails id="content">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
-                deserunt deleniti vel, quas placeat neque sequi.
+                Engaging with a service like anonymous messages necessitates
+                understanding that user identities remain undisclosed.
+                Consequently, determining the sender of the messages you receive
+                is beyond possibility.
               </AccordionDetails>
             </Accordion>
 
@@ -97,11 +99,13 @@ const Faq = () => {
                 aria-controls="panel1a-content"
                 id="panel1a-header"
               >
-                <p>What happens if I don't have an idea for a project?</p>
+                <p>What happens if I forgot my pin?</p>
               </AccordionSummary>
               <AccordionDetails id="content">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
-                deserunt deleniti vel, quas placeat neque sequi.
+                In case your Login PIN slips your mind, kindly proceed to create
+                a new account. Without the PIN, the authenticity of the User ID
+                holder cannot be verified, and hence, we are unable to provide
+                the PIN to anyone.
               </AccordionDetails>
             </Accordion>
 
@@ -113,43 +117,11 @@ const Faq = () => {
                 aria-controls="panel1a-content"
                 id="panel1a-header"
               >
-                <p>Can I join a team or do I have to come with one?</p>
+                <p>Can I be traced from my messages?</p>
               </AccordionSummary>
               <AccordionDetails id="content">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
-                deserunt deleniti vel, quas placeat neque sequi.
-              </AccordionDetails>
-            </Accordion>
-
-            <Accordion elevation={0}>
-              <AccordionSummary
-                expandIcon={
-                  <div style={{ color: "#D434FE", fontSize: "23px" }}>+</div>
-                }
-                aria-controls="panel1a-content"
-                id="panel1a-header"
-              >
-                <p>What happens after the hackathon ends</p>
-              </AccordionSummary>
-              <AccordionDetails id="content">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
-                deserunt deleniti vel, quas placeat neque sequi.
-              </AccordionDetails>
-            </Accordion>
-
-            <Accordion elevation={0}>
-              <AccordionSummary
-                expandIcon={
-                  <div style={{ color: "#D434FE", fontSize: "23px" }}>+</div>
-                }
-                aria-controls="panel1a-content"
-                id="panel1a-header"
-              >
-                <p>Can I work on a project I started before the hackathon?</p>
-              </AccordionSummary>
-              <AccordionDetails id="content">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
-                deserunt deleniti vel, quas placeat neque sequi.
+                Nope. Anonyms guarantees your anonymity when sending messages on
+                our platform
               </AccordionDetails>
             </Accordion>
           </motion.div>
@@ -195,7 +167,7 @@ const Faq = () => {
               ease: [0, 0.71, 0.2, 1.01],
             }}
             src={faq}
-            width={550}
+            width={450}
             alt=""
             className="main"
           />

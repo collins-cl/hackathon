@@ -1,43 +1,13 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import "../Hero/Hero.scss";
 import Star from "../../assets/heroimages/star.png";
 import { motion } from "framer-motion";
-import Chain from "../../assets/heroimages/chain.png";
-import Fire from "../../assets/heroimages/fire.png";
-import Light from "../../assets/heroimages/lightbulb.png";
-import Dude from "../../assets/heroimages/man.png";
-import World from "../../assets/heroimages/world.png";
-import {Link as RegLink } from "react-router-dom";
-import Timer from "../Timer/Timer";
-import blur from "../../assets/spotlight.svg";
+import Banner from "../../assets/secret3.svg";
+import Secret1 from "../../assets/secret1.svg";
+import { Link as RegLink } from "react-router-dom";
+import blur from "../../assets/lens2.png";
 
 const Hero = () => {
-  const [text, setText] = useState("Igniting a Revolution in HR Innovation");
-  const [currentIndex, setCurrentIndex] = useState(9);
-  const [reverse, setReverse] = useState(false);
-
-  useEffect(() => {
-    const typewriterInterval = setInterval(() => {
-      if (!reverse) {
-        if (currentIndex < text.length) {
-          setCurrentIndex((prevIndex) => prevIndex + 1);
-        } else {
-          setReverse(true);
-        }
-      } else {
-        if (currentIndex > 9) {
-          setCurrentIndex((prevIndex) => prevIndex - 1);
-        } else {
-          setReverse(false);
-        }
-      }
-    }, 100); // Adjust typing speed as needed
-
-    return () => {
-      clearInterval(typewriterInterval);
-    };
-  }, [currentIndex, text, reverse]);
-
   return (
     <div className="hero">
       <div className="patch">
@@ -54,54 +24,35 @@ const Hero = () => {
             alt=""
           />
         </div>
-
-        <div className="pink-stripe">
-          <p>{text.slice(0, currentIndex)}</p>
-        </div>
       </div>
 
       <div className="container">
         <div className="box1">
           <div className="top">
-            <p>getlinked Tech</p>
-            <p className="f-p">
-              Hackathon <span>1.0</span> <img src={Chain} alt="" />
-              <img src={Fire} alt="" />
-            </p>
+            <p className="f-p">Send Confidential Anonymous Messages Online</p>
             <p className="light">
-              <img src={Light} alt="" />
+              <img src={Secret1} alt="" />
             </p>
           </div>
 
           <div className="middle">
-            Participate in getlinked tech Hackathon 2023 stand a chance to win a
-            Big prize
+            Anonyms is an interactive anonymous messaging app with a dare game.
+            Create your Profile Link and Send it to all your contacts to check
+            what do your friends think about you. With the help of Anonyms, you
+            can send and recieve anonymous compliments easily for free!
           </div>
 
           <div className="reg-btn">
             {localStorage.getItem("registered", true) ? (
-              <div className="registered">Registered</div>
+              <div className="registered">Get Started</div>
             ) : (
               <RegLink to="/register">Register</RegLink>
             )}
           </div>
-
-          <Timer />
         </div>
 
         <div className="box2">
-          <img src={Dude} alt="" />
-          <motion.img
-            animate={{ scale: [0.3, 0.4, 0.8, 0.71, 0.3, 0.7, 0.9] }}
-            transition={{
-              duration: 2,
-              delay: 0.5,
-              ease: [0, 0.71, 0.2, 1.01],
-            }}
-            className="abs-image"
-            src={World}
-            alt=""
-          />
+          <img src={Banner} alt="" />
         </div>
       </div>
       <div className="clear"></div>

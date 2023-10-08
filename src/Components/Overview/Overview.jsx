@@ -13,6 +13,7 @@ import blur from "../../assets/spotlight.png";
 const Overview = () => {
   return (
     <div className="overview">
+      <div className="intro">Why Choose Anonyms</div>
       <div className="introduction">
         <div className="wrapper">
           <div className="img">
@@ -43,8 +44,7 @@ const Overview = () => {
               transition={{ delay: 0.5 }}
               className="head"
             >
-              Introduction to getlinked
-              <span> tech Hackathon 1.0</span>
+              <span>Anonymity</span>
               <p>
                 <motion.img
                   initial={{ opacity: 0 }}
@@ -60,16 +60,19 @@ const Overview = () => {
               initial={{ y: 100, opacity: 0 }}
               whileInView={{ y: 0, opacity: 1 }}
               viewport={{ once: true }}
-              transition={{ delay: .8 }}
+              transition={{ delay: 0.8 }}
               className="info"
             >
-              Our tech hackathon is a melting pot of visionaries, and its
-              purpose is as clear as day: to shape the future. Whether you're a
-              coding genius, a design maverick, or a concept wizard, you'll have
-              the chance to transform your ideas into reality. Solving
-              real-world problems, pushing the boundaries of technology, and
-              creating solutions that can change the world, that's what we're
-              all about!
+              At our core, we value privacy, making sure that your confidential
+              messages are sent with complete anonymity. Until you decide to
+              unveil it, your identity remains hidden. Our dedication to
+              safeguarding your data creates a secure space for discreet
+              communication, free from concerns of exposure. Our cutting-edge
+              encryption ensures that your messages remain private and for your
+              eyes only. You're in control of when and if you choose to disclose
+              your identity, providing the freedom to engage openly, with
+              confidence in your online interactions. Your privacy is our
+              priority.
             </motion.div>
           </div>
         </div>
@@ -88,15 +91,7 @@ const Overview = () => {
               transition={{ duration: 0.5 }}
               className="head"
             >
-              Rules and{"  "}
-              <motion.span
-                animate={{ y: 50, opacity: 0 }}
-                whileInView={{ y: 0, opacity: 1 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6 }}
-              >
-                Guidelines
-              </motion.span>
+              Safe and Secure
             </motion.div>
 
             <motion.div
@@ -117,18 +112,22 @@ const Overview = () => {
               <motion.img
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
-                transition={{ repeat: Infinity, duration: 2, delay: .8 }}
+                transition={{ repeat: Infinity, duration: 2, delay: 0.8 }}
                 src={starwhite}
                 className="bottom"
                 alt=""
               />
-              Our tech hackathon is a melting pot of visionaries, and its
-              purpose is as clear as day: to shape the future. Whether you're a
-              coding genius, a design maverick, or a concept wizard, you'll have
-              the chance to transform your ideas into reality. Solving
-              real-world problems, pushing the boundaries of technology, and
-              creating solutions that can change the world, that's what we're
-              all about!
+              At the heart of our mission lies a steadfast commitment to the
+              safety and well-being of every user on our anonymous messaging
+              platform. Our dedication to security extends to the implementation
+              of comprehensive reporting systems, providing you with the means
+              to address any content that may not align with your preferences or
+              comfort. Your peace of mind is our top priority, and we spare no
+              effort in maintaining a secure and welcoming atmosphere for
+              everyone. With your active participation through reporting, we
+              collectively ensure that our platform remains a place where you
+              can engage with confidence and without hesitation. Your safety is
+              our shared responsibility, and together, we make it a reality.
             </motion.div>
           </div>
 
@@ -203,8 +202,8 @@ const Overview = () => {
               transition={{ delay: 0.5 }}
               className="head"
             >
-              Judging Criteria
-              <span> Key attributes</span>
+              24/7 Support and
+              <span> Images and VIdeo Integration</span>
             </motion.div>
 
             <motion.div
@@ -214,44 +213,23 @@ const Overview = () => {
               transition={{ delay: 0.8 }}
               className="info"
             >
-              <div>
-                <span>Innovation and Creativity:</span> Evaluate the uniqueness
-                and creativity of the solution. Consider whether it addresses a
-                real-world problem in a novel way or introduces innovative
-                features.
-              </div>
-
-              <div>
-                <span>Functionality:</span> Assess how well the solution works.
-                Does it perform its intended functions effectively and without
-                major issues? Judges would consider the completeness and
-                robustness of the solution.
-              </div>
-
-              <div>
-                <span>Impact and Relevance:</span> Determine the potential
-                impact of the solution in the real world. Does it address a
-                significant problem, and is it relevant to the target audience?
-                Judges would assess the potential social, economic, or
-                environmental benefits.
-              </div>
-
-              <div>
-                <span>Technical Complexity:</span> Evaluate the technical
-                sophistication of the solution. Judges would consider the
-                complexity of the code, the use of advanced technologies or
-                algorithms, and the scalability of the solution.
-              </div>
-
-              <div>
-                <span>Adherence to Hackathon Rules:</span> udges will Ensure
-                that the team adhered to the rules and guidelines of the
-                hackathon, including deadlines, use of specific technologies or
-                APIs, and any other competition-specific requirements.
-              </div>
+              At the core of our platform is the seamless integration of
+              multimedia content, enabling you to effortlessly share text,
+              images, and videos all in one place. This versatility empowers you
+              to express yourself creatively and authentically. Beyond the
+              features, our commitment to your satisfaction is unwavering. If
+              you ever find yourself in need of assistance or have any questions
+              related to our anonymous messaging and feedback platform, know
+              that we're here for you 24 hours a day, 7 days a week. Our
+              dedicated support team is just a message away, ready to provide
+              guidance, resolve issues, or address any concerns you may have. We
+              understand that your experience matters, and we continually strive
+              to make our platform a welcoming space where you can interact with
+              confidence. Your feedback and needs are essential to us, and we
+              value the opportunity to serve you at any time, day or night.
             </motion.div>
 
-            <div className="read-btn">Read More</div>
+            <div className="read-btn">Get Started</div>
           </div>
         </div>
       </div>

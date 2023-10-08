@@ -7,6 +7,11 @@
   src: url("./Fonts/Montserrat/static/Montserrat-ExtraBold.ttf");
 }
 
+@font-face {
+  font-family: "Poppins-L";
+  src: url("./Fonts/Montserrat/static/Montserrat-Light.ttf");
+}
+
 * {
   margin: 0;
   padding: 0;
