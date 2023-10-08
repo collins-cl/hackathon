@@ -41,10 +41,6 @@ const RegSuccess = () => {
           you have successfully Registered!
         </div>
 
-        <div className="info">
-          Yes, it was easy and you did it! check your mail box for next step 🥳
-        </div>
-
         <div className="back" onClick={() => navigate("/")}>
           Back
         </div>

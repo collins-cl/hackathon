@@ -1,6 +1,7 @@
 import React from "react";
 import "../Footer/Footer.scss";
 import Logo from "../../assets/getlinked.png";
+import { LiaAdobe } from "react-icons/lia";
 import { Link as RegLink } from "react-router-dom";
 import { Link } from "react-scroll";
 import { FaLinkedin, FaInstagram, FaFacebookF } from "react-icons/fa";
@@ -50,14 +51,17 @@ const Footer = () => {
           <div className="container1">
             <div className="logo">
               <RegLink to="/">
-                <img src={Logo} alt="" />
+                <LiaAdobe />
+                <p>Anonyms</p>
               </RegLink>
             </div>
 
             <div className="info">
-              Getlinked Tech Hackathon is a technology innovation program
-              established by a group of organizations with the aim of showcasing
-              young and talented individuals in the field of technology
+              Anonyms is an interactive anonymous messaging app with a dare
+              game. Create your Profile Link and Send it to all your contacts to
+              check what do your friends think about you. With the help of
+              Anonyms, you can send and recieve anonymous compliments easily for
+              free!
             </div>
 
             <div className="tou">
@@ -71,8 +75,8 @@ const Footer = () => {
             <div className="head">Useful Links</div>
 
             <div className="links">
-              <Link to="overview">Overview</Link>
-              <Link to="timeline">TimeLine</Link>
+              <Link to="overview">About</Link>
+              <RegLink to="/createtag">Create Tag</RegLink>
               <Link to="faq">FAQs</Link>
               <RegLink to="/register">Register</RegLink>
             </div>
@@ -119,20 +123,10 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <div className="container3">
-            <div className="head">Contact Us</div>
-            <div className="call">
-              <FaPhoneVolume /> <p>+2348060015910</p>
-            </div>
-
-            <div className="location">
-              <FaLocationDot className="loc" />{" "}
-              <p>27,Alara Street Yaba 100012 Lagos State</p>
-            </div>
-          </div>
+        
         </div>
 
-        <div className="rights">All rights reserved. © getlinked Ltd.</div>
+        <div className="rights">All rights reserved. © Anonyms.</div>
       </div>
     </div>
   );

@@ -12,14 +12,6 @@
     z-index: -1;
   }
 
-  .left {
-    position: absolute;
-    right: 0;
-    width: 400px;
-    bottom: 0;
-    z-index: -1;
-  }
-
   .star {
     width: 15px;
     position: absolute;
@@ -53,55 +45,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-
-    .box1 {
-      width: 40%;
-      .head {
-        font-size: 1.2em;
-        font-weight: bold;
-        color: $primarycolor;
-      }
-
-      .contact-us {
-        .title {
-          font-size: 14px;
-          width: 20%;
-          margin-top: 1em;
-        }
-
-        .location {
-          font-size: 14px;
-          width: 25%;
-          margin-top: 1em;
-        }
-
-        .call {
-          margin-top: 1em;
-          font-size: 14px;
-        }
-
-        .work-hours {
-          font-size: 14px;
-          width: 70%;
-          margin-top: 2em;
-        }
-      }
-
-      .socials {
-        margin-top: 2em;
-        p {
-          font-size: 14px;
-          color: $primarycolor;
-        }
-
-        div {
-          display: flex;
-          align-items: center;
-          gap: 2em;
-          margin-top: 1em;
-        }
-      }
-    }
 
     .box2 {
       border-radius: 8px;
@@ -170,13 +113,14 @@
           display: flex;
           justify-content: center;
           align-items: center;
-          width: 140px;
+          width: 100%;
           margin: auto;
           margin-top: -0.5em;
           height: 40px;
           background: $lineargradient;
           border: none;
           cursor: pointer;
+          font-weight: bold;
           border-radius: 4px;
 
           &:hover {
@@ -198,13 +142,12 @@
     .right {
       position: absolute;
       left: 0;
-      width: 100%;
+      width: 90vw;
       top: 0;
       z-index: -1;
     }
 
     .left {
-    
       display: none;
     }
 
@@ -241,43 +184,9 @@
       display: flex;
       flex-direction: column-reverse;
 
-      .box1 {
-        width: 100%;
-        .head {
-          display: none;
-        }
-
-        .contact-us {
-          display: none;
-        }
-
-        .socials {
-          text-align: center;
-          margin-top: 0;
-          p {
-            font-size: 15px;
-            color: $primarycolor;
-          }
-
-          div {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 2em;
-            margin-top: 1em;
-
-            a {
-              .icon {
-                font-size: 17px;
-              }
-            }
-          }
-        }
-      }
-
       .box2 {
         background: none;
-        padding: 2em 3em;
+        padding: 2em 1em;
         height: 100%;
         width: 100%;
         box-shadow: none;
@@ -297,7 +206,7 @@
           }
 
           button {
-            width: 60%;
+            width: 100%;
           }
         }
       }

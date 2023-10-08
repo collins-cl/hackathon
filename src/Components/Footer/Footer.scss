@@ -13,25 +13,25 @@
     position: absolute;
   }
 
-  .purple{
+  .purple {
     bottom: 0;
     left: 50%;
     margin-bottom: 3em;
     width: 15px;
   }
 
-  .white{
+  .white {
     margin-left: 3em;
     width: 15px;
   }
 
-  .sec-white{
+  .sec-white {
     right: 10%;
     bottom: 30%;
     width: 15px;
   }
 
-  .third-white{
+  .third-white {
     right: 30%;
     width: 15px;
   }
@@ -48,8 +48,11 @@
       .container1 {
         width: 50%;
         .logo {
-          img {
-            width: 130px;
+          a {
+            display: flex;
+            align-items: center;
+            gap: 7px;
+            font-size: 1.7em;
           }
         }
 
@@ -163,6 +166,7 @@
 @media screen and (max-width: 768px) {
   .footer {
     .wrapper {
+      width:90vw ;
       .container {
         width: 100%;
         display: flex;

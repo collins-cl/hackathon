@@ -262,7 +262,7 @@
     .introduction {
       border-bottom: 1px solid rgba(211, 211, 211, 0.107);
       .wrapper {
-        width: 95vw;
+        width: 90vw;
         margin: auto;
         flex-direction: column;
         gap: 8em;
@@ -329,7 +329,7 @@
       .wrapper {
         display: flex;
         flex-direction: column-reverse;
-        max-width: 95vw;
+        max-width: 90vw;
 
         .details {
           width: 100%;
@@ -389,7 +389,7 @@
         justify-content: center;
         align-items: center;
         gap: 3em;
-        max-width: 95vw;
+        max-width: 90vw;
         margin: auto;
         padding: 5em 0;
         text-align: center;

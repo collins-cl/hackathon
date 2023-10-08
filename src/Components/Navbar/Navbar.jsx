@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "../Navbar/Navbar.scss";
 import Logo from "../../assets/getlinked.png";
+import { LiaAdobe } from "react-icons/lia";
 import Hamburger from "../../assets/Vector.png";
 import { Link } from "react-scroll";
 import { Link as RegLink, useLocation } from "react-router-dom";
@@ -19,7 +20,8 @@ const Navbar = () => {
         <div className="section1">
           <div className="logo">
             <RegLink to="/">
-              <img src={Logo} width={125} alt="\" />
+              <LiaAdobe />
+              <p>Anonyms</p>
             </RegLink>
           </div>
         </div>
@@ -47,9 +49,11 @@ const Navbar = () => {
 
             <div className="reg-btn">
               {localStorage.getItem("registered", true) ? (
-                <div className="registered">Registered</div>
+                <div className="registered">Get Started</div>
               ) : (
-                <RegLink to="/register">Register</RegLink>
+                <RegLink className="a" to="/register">
+                  <div>Register</div>
+                </RegLink>
               )}
             </div>
 

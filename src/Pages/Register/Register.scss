@@ -4,7 +4,6 @@
   padding: 3em 0;
   position: relative;
 
-  .left,
   .right,
   .star,
   .sec-star,
@@ -12,12 +11,6 @@
   .gray {
     position: absolute;
     z-index: -1;
-  }
-
-  .left {
-    right: 0;
-    bottom: 0;
-    width: 500px;
   }
 
   .right {
@@ -53,13 +46,8 @@
     margin: auto;
     margin-top: 1em;
     display: flex;
+    justify-content: center;
     align-items: center;
-
-    .box1 {
-      img {
-        width: 500px;
-      }
-    }
 
     .box2 {
       border-radius: 5px;
@@ -72,32 +60,6 @@
         font-size: 1.2em;
         font-weight: bold;
         color: $primarycolor;
-      }
-
-      .neck {
-        margin-top: 1em;
-        display: flex;
-        align-items: center;
-        gap: 2em;
-        p {
-          font-size: 12px;
-        }
-        div {
-          position: relative;
-
-          &::after {
-            content: url("../../assets/Line\ 9.png");
-            position: absolute;
-            left: 0;
-            margin-left: -1.5em;
-            bottom: 0;
-            margin-bottom: -3px;
-          }
-
-          img {
-            width: 17px;
-          }
-        }
       }
 
       .create {
@@ -131,114 +93,69 @@
             box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
             margin-top: 5px;
           }
-        }
 
-        .sect2 {
-          display: flex;
-          justify-content: space-between;
-          margin-top: 1em;
-
-          div {
-            width: 49%;
-          }
-          label {
-            font-size: 13px;
-          }
-
-          .category {
-            .container {
-              .category_size {
-                position: absolute;
-                width: 100%;
-                background: #150e28;
-                padding: 10px;
-                z-index: 1;
-                margin-top: 5px;
-
-                .content {
-                  padding: 5px;
-                  width: 100%;
-                  cursor: pointer;
-                  font-size: 13px;
-                  border-bottom: 1px solid $primarycolor;
-                }
-              }
-            }
-          }
-
-          .container {
-            width: 100%;
+          .project {
             position: relative;
-            .box {
-              width: 100%;
-              height: 40px;
-              border-radius: 4px;
-              outline: none;
-              border: 1px solid #fff;
-              background: rgba(255, 255, 255, 0.03);
-              box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-              margin-top: 5px;
-              display: flex;
-              justify-content: space-between;
-              align-items: center;
-              padding: 10px;
-              font-size: 13px;
-            }
 
-            .group_size {
+            .icon {
               position: absolute;
-              width: 100%;
-              background: #150e28;
-              padding: 10px;
-              z-index: 1;
-
-              .content {
-                padding: 5px;
-                width: 100%;
-                cursor: pointer;
-                font-size: 14px;
-                border-bottom: 1px solid $primarycolor;
-              }
+              right: 1.5em;
+              margin-top: 1.2em;
+              font-size: 14px;
+              fill: rgb(180, 180, 180);
             }
           }
         }
+      }
 
-        .attention {
-          margin-top: 1em;
-          font-size: 12px;
-          color: #ff26b9;
-          font-style: italic;
-          font-weight: 400;
-          line-height: normal;
+      .sect2 {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 1em;
+
+        div {
+          width: 49%;
         }
-
-        .check {
-          display: flex;
-          align-items: center;
-          gap: 5px;
-          input {
-            width: 10px;
-          }
-          margin-top: 1em;
-          font-size: 12px;
+        label {
+          font-size: 13px;
         }
+      }
 
-        button {
-          width: 100%;
-          margin-top: 1em;
-          height: 40px;
-          border-radius: 4px;
-          border: none;
-          cursor: pointer;
-          background: $lineargradient;
+      .attention {
+        margin-top: 1em;
+        font-size: 12px;
+        color: #ff26b9;
+        font-style: italic;
+        font-weight: 400;
+        line-height: normal;
+      }
 
-          &:hover {
-            background: transparent;
-            border-width: 1px;
-            border-style: solid;
+      .check {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        input {
+          width: 10px;
+        }
+        margin-top: 1em;
+        font-size: 12px;
+      }
 
-            border-image: $hoverGradient;
-          }
+      button {
+        width: 100%;
+        margin-top: 1em;
+        height: 40px;
+        border-radius: 4px;
+        border: none;
+        cursor: pointer;
+        background: $lineargradient;
+
+        &:hover {
+          background: transparent;
+          border-width: 1px;
+          border-style: solid;
+
+          border-image: $hoverGradient;
         }
       }
     }
@@ -268,17 +185,12 @@
       flex-direction: column;
       align-items: center;
 
-      .box1 {
-        img {
-          width: 100%;
-        }
-      }
 
       .box2 {
         border-radius: 0;
         background: none;
         box-shadow: none;
-        padding: 2em;
+        padding: 0;
         width: 100%;
 
         .head {
@@ -309,7 +221,9 @@
               width: 100%;
               margin-top: 1em;
             }
+
           }
+          
 
           .sect2 {
             display: flex;
@@ -338,40 +252,6 @@
               }
             }
 
-            .group {
-              width: 35%;
-
-              .container {
-                .box {
-                  p {
-                    display: flex;
-                    align-items: center;
-                    justify-content: space-between;
-                    text-overflow: ellipsis;
-                    white-space: nowrap;
-                    overflow: hidden;
-                    padding: 5px;
-                  }
-                }
-
-                .group_size {
-                  position: absolute;
-                  width: 100%;
-                  padding: 10px;
-                  z-index: 1;
-                  right: 0;
-                  margin-top: 5px;
-
-                  .content {
-                    padding: 5px;
-                    width: 100%;
-                    cursor: pointer;
-                    font-size: 14px;
-                  }
-                }
-              }
-            }
-
             div {
               width: 100%;
             }
@@ -384,14 +264,8 @@
             font-size: 10px;
           }
 
-          .check {
-            display: flex;
-            align-items: flex-start;
-            font-size: 12px;
-          }
-
           button {
-            width: 60%;
+            width: 100%;
             margin: auto;
             display: flex;
             justify-content: center;
