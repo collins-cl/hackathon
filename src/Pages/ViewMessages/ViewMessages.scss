@@ -1,0 +1,115 @@
+.view-messages {
+  .vm-wrapper {
+    max-width: 60vw;
+    margin: auto;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.03);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    margin-top: 2em;
+
+    .head {
+      font-size: 2em;
+    }
+
+    .messages {
+      width: 65%;
+      margin: auto;
+      margin-top: 1em;
+
+      .no-replies {
+        border: 1px solid #d434fe;
+        padding: 1em;
+      }
+
+      .replies {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        .content {
+          padding: 1em;
+          font-size: 14px;
+          font-family: "Poppins-L";
+          border: 1px solid #d434fe;
+
+          .img {
+            width: 250px;
+            height: fit-content;
+            object-fit: cover;
+            img {
+              width: 100%;
+              background-size: cover;
+            }
+          }
+
+          p {
+            margin-top: 10px;
+          }
+
+          .share-res {
+            width: 100%;
+            height: 37px;
+            margin: auto;
+            font-size: 14px;
+            margin-top: 10px;
+            display: flex;
+            cursor: pointer;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+            background-color: rgb(8, 1, 31);
+          }
+        }
+      }
+    }
+
+    .profile-link {
+      width: 50%;
+      height: 40px;
+      margin: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      margin-top: 1em;
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+      background-color: rgb(6, 209, 6);
+
+      .icon {
+        font-size: 20px;
+      }
+    }
+
+    .back {
+      width: 50%;
+      height: 40px;
+      margin: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      margin-top: 1em;
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+      background: linear-gradient(
+        270deg,
+        #903aff,
+        #d434fe 56.42%,
+        #ff26b9,
+        #fe34b9
+      );
+
+      &:hover {
+        border: 1px solid #d434fe;
+        background: transparent;
+        transition: all 0.3s;
+      }
+    }
+  }
+}

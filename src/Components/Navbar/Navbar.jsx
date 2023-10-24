@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "../Navbar/Navbar.scss";
-import Logo from "../../assets/getlinked.png";
 import { LiaAdobe } from "react-icons/lia";
 import Hamburger from "../../assets/Vector.png";
 import { Link } from "react-scroll";
