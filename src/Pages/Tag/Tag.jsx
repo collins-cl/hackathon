@@ -18,6 +18,7 @@ const Tag = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    console.log(state);
   };
   return (
     <div className="tag">
@@ -32,7 +33,7 @@ const Tag = () => {
             private or public. Tap in to discover more of Anonyms secrecy!
           </div>
 
-          <form action="">
+          <form onClick={handleSubmit}>
             <div className="tag-choice">
               <div className="name">
                 <label htmlFor="tag-name">Tag Name</label>
