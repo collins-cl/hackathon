@@ -34,14 +34,21 @@ const Navbar = () => {
                   About
                 </Link>
               )}
+
               <RegLink to="/createtag" onClick={closeHmaburger}>
                 Create Tag
               </RegLink>
+
+              <RegLink to="/chat" onClick={closeHmaburger}>
+                Chat
+              </RegLink>
+
               {location.pathname === "/contact" ? null : (
                 <Link to="faq" smooth={true} onClick={closeHmaburger}>
                   FAQs
                 </Link>
               )}
+
               <RegLink to="/contact" onClick={closeHmaburger}>
                 Contact
               </RegLink>
