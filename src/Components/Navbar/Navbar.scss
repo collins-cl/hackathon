@@ -37,6 +37,10 @@
             font-size: 15px;
             cursor: pointer;
           }
+
+          div {
+            cursor: pointer;
+          }
         }
 
         .reg-btn {
@@ -149,7 +153,8 @@
             flex-direction: column;
             gap: 2em;
 
-            a {
+            a,
+            div {
               font-size: 1.2em;
             }
           }

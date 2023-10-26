@@ -7,6 +7,8 @@ import Tag from "./Pages/Tag/Tag";
 import SendMessage from "./Pages/SendMessage/SendMessage";
 import ReadComments from "./Pages/ReadComments/ReadComments";
 import ViewMessages from "./Pages/ViewMessages/ViewMessages";
+import SendAnonyms from "./Pages/SendAnons/SendAnonyms";
+import ShareProfile from "./Pages/ShareProfile/ShareProfile";
 
 function App() {
   return (
@@ -23,6 +25,8 @@ function App() {
             element={<ReadComments />}
           />
           <Route path="/viewmessages" element={<ViewMessages />} />
+          <Route path="/sendanonyms/:username" element={<SendAnonyms />} />
+          <Route path="/shareprofile/:tag" element={<ShareProfile />} />
         </Routes>
       </div>
     </Router>

@@ -1,0 +1,146 @@
+.sendanons {
+  .s-a-wrapper {
+    max-width: 60vw;
+    margin: auto;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.03);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    margin-top: 2em;
+
+    .head {
+      font-size: 1.5em;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      max-width: 60%;
+      margin-top: 1em;
+
+      .input {
+        label {
+          font-size: 15px;
+
+          sup {
+            color: red;
+          }
+        }
+        textarea {
+          width: 100%;
+          height: 150px;
+          margin-top: 1em;
+          outline: none;
+          background: transparent;
+          color: white;
+          padding: 8px;
+          font-size: 17px;
+
+          &::placeholder {
+            font-size: 14px;
+          }
+
+          &::-webkit-scrollbar {
+            display: none;
+          }
+        }
+      }
+
+      button,
+      span {
+        margin-top: 10px;
+        height: 40px;
+        border-radius: 20px;
+        border: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        font-size: 15px;
+        cursor: pointer;
+        background: linear-gradient(
+          270deg,
+          #903aff,
+          #d434fe 56.42%,
+          #ff26b9,
+          #fe34b9
+        );
+
+        &:hover {
+          transition: all 0.3s;
+          background: transparent;
+          border: 1px solid #d434fe;
+        }
+      }
+
+      .image {
+        max-width: 350px;
+        margin-top: 5px;
+
+        img {
+          width: 100%;
+        }
+      }
+
+      .add-file {
+        background: rgb(84, 82, 82);
+        font-size: 13px;
+
+        .file-upload {
+          width: 100%;
+          cursor: pointer;
+          position: absolute;
+          opacity: 0;
+        }
+
+        .file-upload::-webkit-file-upload-button {
+          display: none;
+        }
+      }
+
+      p {
+        font-size: 11px;
+        margin-top: 5px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .sendanons {
+    .s-a-wrapper {
+      max-width: 95vw;
+      margin: auto;
+      padding: 1em;
+      margin-top: 1em;
+
+      .head {
+        font-size: 1.5em;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+        margin-top: 1em;
+
+        .image {
+          max-width: 100%;
+          margin-top: 5px;
+
+          img {
+            width: 100%;
+          }
+        }
+
+        p {
+          font-size: 11px;
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+}

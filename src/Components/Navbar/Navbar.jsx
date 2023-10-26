@@ -3,11 +3,12 @@ import "../Navbar/Navbar.scss";
 import { LiaAdobe } from "react-icons/lia";
 import Hamburger from "../../assets/Vector.png";
 import { Link } from "react-scroll";
-import { Link as RegLink, useLocation } from "react-router-dom";
+import { Link as RegLink, useLocation, useNavigate } from "react-router-dom";
 import { FaTimes } from "react-icons/fa";
 
 const Navbar = () => {
   const location = useLocation();
+  const navigate = useNavigate();
   const [open, setOpen] = useState(false);
 
   const openHamburger = () => setOpen(true);
@@ -34,10 +35,19 @@ const Navbar = () => {
                 </Link>
               )}
 
-              <RegLink to="/createtag" onClick={closeHmaburger}>
-                Create Tag
-              </RegLink>
-
+              {localStorage.getItem("tag") ? (
+                <div
+                  onClick={() =>
+                    navigate(`/shareprofile/${localStorage.getItem("tag")}`)
+                  }
+                >
+                  Share Profile
+                </div>
+              ) : (
+                <RegLink to="/createtag" onClick={closeHmaburger}>
+                  Create Tag
+                </RegLink>
+              )}
               <RegLink to="/chat" onClick={closeHmaburger}>
                 Chat
               </RegLink>

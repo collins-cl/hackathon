@@ -1,15 +1,34 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "../ViewMessages/ViewMessages.scss";
 import Navbar from "../../Components/Navbar/Navbar";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { FaWhatsapp } from "react-icons/fa6";
 import { MessagesDummy } from "./MessagesDummy";
 
 const ViewMessages = () => {
   const data = MessagesDummy;
-
-  const [dataset, setDataSet] = useState(data);
   const navigate = useNavigate();
+  const param = useParams();
+
+  const [dataset, setDataSet] = useState();
+  const [text, setText] = useState(
+    `http://getlinkedhack-collins-cl.vercel.app/sendanonyms/${param.username}`
+  );
+
+  const shareProfile = () => {
+    let message = `Share your anonymous messages with ${param.username} and trust it to remain a secret 😜 /n ${text}`;
+
+    let url = `https://wa.me/?text=${encodeURI(message)}&app_absent=0`;
+    console.log(message);
+    window.open(url).focus();
+  };
+
+  useEffect(() => {
+    setTimeout(() => {
+      setDataSet(data);
+    }, 3000);
+  }, []);
+
   return (
     <div className="view-messages">
       <Navbar />
@@ -17,7 +36,7 @@ const ViewMessages = () => {
       <div className="vm-wrapper">
         <div className="head">My Messages</div>
         <div className="messages">
-          {dataset.length <= 0 ? (
+          {!dataset ? (
             <div className="no-replies">
               Opps!. No one has sent you a message in the last session. Share
               your profile link and check back later
@@ -29,9 +48,12 @@ const ViewMessages = () => {
           )}
         </div>
 
-        <div className="profile-link">
-          <FaWhatsapp className="icon" /> Share on Whatsapp
-        </div>
+        {!dataset && (
+          <div className="profile-link">
+            <FaWhatsapp className="icon" onClick={shareProfile} /> Share Link on
+            Whatsapp
+          </div>
+        )}
 
         <div className="back" onClick={() => navigate(-1)}>
           Go Back
@@ -48,7 +70,7 @@ export const Content = ({ data }) => {
     switch (item.type) {
       case "text":
         return (
-          <div className="content">
+          <div className="content" key={id}>
             <p>{item.message}</p>
 
             <div className="share-res">Share Response</div>

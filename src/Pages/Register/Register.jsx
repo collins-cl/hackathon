@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "../Register/Register.scss";
-import axios from "axios";
 import RegSuccess from "../../Components/RegSuccess/RegSuccess";
 import Navbar from "../../Components/Navbar/Navbar";
 import right from "../../assets/ContactFlares/rightflare.png";

@@ -2,24 +2,33 @@ import React, { useState } from "react";
 import "../Tag/Tag.scss";
 import Navbar from "../../Components/Navbar/Navbar";
 import Footer from "../../Components/Footer/Footer";
+import { ToastContainer, toast } from "react-toastify";
+import { useNavigate, useParams } from "react-router-dom";
 
 const Tag = () => {
-  const initilaVal = {
-    tag: "",
-    description: "",
-  };
-  const [state, setState] = useState(initilaVal);
+  const navigate = useNavigate();
+  const [tag, setTag] = useState("");
+  const [description, setDescription] = useState("");
 
-  const { tag, type, description } = state;
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setState({ ...state, [name]: value });
-  };
+  const success = () =>
+    toast.success("Tag Created Successfully", {
+      position: "bottom-right",
+      autoClose: 1000,
+      hideProgressBar: true,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "dark",
+    });
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    
-    console.log(state);
+    success();
+    setTimeout(() => {
+      navigate(`/shareprofile/${tag}`);
+    }, 2500);
+    localStorage.setItem("tag", tag);
   };
   return (
     <div className="tag">
@@ -34,7 +43,7 @@ const Tag = () => {
             private or public. Tap in to discover more of Anonyms secrecy!
           </div>
 
-          <form onClick={handleSubmit}>
+          <form onSubmit={handleSubmit}>
             <div className="tag-choice">
               <div className="name">
                 <label htmlFor="tag-name">Tag Name</label>
@@ -43,20 +52,13 @@ const Tag = () => {
                   name="tag"
                   placeholder="input tag name e.g @name"
                   required
-                  value={tag}
-                  onChange={handleChange}
+                  onChange={(e) => setTag(e.target.value)}
                 />
               </div>
 
               <div className="option">
                 <label htmlFor="type">Tag Type</label>
-                <input
-                  type="text"
-                  name="type"
-                  disabled
-                  value="Public"
-                  onChange={handleChange}
-                />
+                <input type="text" name="type" disabled value="Public" />
               </div>
             </div>
 
@@ -64,8 +66,7 @@ const Tag = () => {
               <label htmlFor="desc">Tag Description</label>
               <textarea
                 name="description"
-                value={description}
-                onChange={handleChange}
+                onChange={(e) => setDescription(e.target.value)}
                 placeholder="Tag  Description"
               ></textarea>
             </div>
