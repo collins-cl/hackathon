@@ -16,7 +16,7 @@ const ViewMessages = () => {
   );
 
   const shareProfile = () => {
-    let message = `Share your anonymous messages with ${param.username} and trust it to remain a secret 😜 /n ${text}`;
+    let message = `Share your anonymous messages with ${param.username} and trust it to remain a secret 😜 ${text}`;
 
     let url = `https://wa.me/?text=${encodeURI(message)}&app_absent=0`;
     console.log(message);

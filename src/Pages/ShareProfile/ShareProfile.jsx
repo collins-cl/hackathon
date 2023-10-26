@@ -29,7 +29,7 @@ const ShareProfile = () => {
   const shareProfile = () => {
     let message = `Share your anonymous messages with ${localStorage.getItem(
       "tag"
-    )} and trust it to remain a secret 😜 /n ${text}`;
+    )} and trust it to remain a secret 😜 ${text}`;
 
     let url = `https://wa.me/?text=${encodeURI(message)}&app_absent=0`;
     console.log(message);
