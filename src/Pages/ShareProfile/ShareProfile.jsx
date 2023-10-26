@@ -33,21 +33,22 @@ const ShareProfile = () => {
 
     let url = `https://wa.me/?text=${encodeURI(message)}&app_absent=0`;
     console.log(message);
-    // window.open(url).focus();
+    window.open(url).focus();
   };
   return (
     <div className="s-profile">
       <Navbar />
       <div className="s-p-wrapper">
+        <div className="head">{`${param.tag}'s Profile`}</div>
+
         <div
-          className="head"
+          className="link"
           onClick={() => {
             navigator.clipboard.writeText(text);
             success();
+            console.log(text);
           }}
-        >{`${param.tag}'s Profile`}</div>
-
-        <div className="link">
+        >
           {text} <FaCopy />
         </div>
 
